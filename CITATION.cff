@@ -1,0 +1,37 @@
+cff-version: 1.2.0
+type: software
+message: "Cite this study implementation and the original method paper when applicable; see references.bib."
+title: "GraphRAG: MUTCD comparison implementation"
+authors:
+  - name: "GEMS-RAG contributors"
+repository-code: "https://github.com/GEMS-RAG/graphrag"
+url: "https://github.com/GEMS-RAG/graphrag"
+version: "1.0.0"
+preferred-citation:
+  type: article
+  title: "From Local to Global: A Graph RAG Approach to Query-Focused Summarization"
+  authors:
+    - family-names: "Edge"
+      given-names: "Darren"
+    - family-names: "Trinh"
+      given-names: "Ha"
+    - family-names: "Cheng"
+      given-names: "Newman"
+    - family-names: "Bradley"
+      given-names: "Joshua"
+    - family-names: "Chao"
+      given-names: "Alex"
+    - family-names: "Mody"
+      given-names: "Apurva"
+    - family-names: "Truitt"
+      given-names: "Steven"
+    - family-names: "Metropolitansky"
+      given-names: "Dasha"
+    - family-names: "Ness"
+      given-names: "Robert Osazuwa"
+    - family-names: "Larson"
+      given-names: "Jonathan"
+  year: 2024
+  journal: "arXiv preprint arXiv:2404.16130"
+  doi: "10.48550/arXiv.2404.16130"
+  url: "https://arxiv.org/abs/2404.16130"

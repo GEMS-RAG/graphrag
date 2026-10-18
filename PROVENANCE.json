@@ -1,0 +1,2747 @@
+{
+  "schema_version": 1,
+  "method": "graphrag",
+  "source": {
+    "repository": "https://github.com/GEMS-RAG/rag",
+    "revision": "8e981f2e3ae98a69516206cc19fca010a3f33d4e"
+  },
+  "extraction_date": "2026-10-18",
+  "scope": "Study retrieval code and required source dependencies are copied byte-for-byte. Missing upstream packaging README files are restored from the recorded upstream revision.",
+  "upstream": {
+    "repository": "https://github.com/microsoft/graphrag",
+    "revision": "6d02c2355c3fed4c49007572fbe951d73258a37f",
+    "license": "MIT",
+    "path": "third_party/graphrag"
+  },
+  "shared_study_assets": {
+    "repository": "https://github.com/GEMS-RAG/rag",
+    "corpus": "indexes/corpus/chunks.jsonl",
+    "corpus_sha256": "1035540a107be1e6016a98f7543faadd53a187a2cca8bd528fcf7beb3d6f529d"
+  },
+  "files": [
+    {
+      "path": "pipelines/query_graphrag.py",
+      "source_path": "pipelines/query_graphrag.py",
+      "bytes": 63229,
+      "sha256": "cf4f1945865c3c623ca9ac0db239daca4dddbfa4d57bfe07df1fe6172df7ec39"
+    },
+    {
+      "path": "src/comparison_support/__init__.py",
+      "source_path": "src/comparison_support/__init__.py",
+      "bytes": 61,
+      "sha256": "0217b132754833ec04b14fffabcba0fa95fdd4a87b7e8a4b754410fd61c4a06e"
+    },
+    {
+      "path": "src/comparison_support/endpoint.py",
+      "source_path": "src/comparison_support/endpoint.py",
+      "bytes": 1948,
+      "sha256": "fa98668cd8cd5250a54ae2c50563da5c00b09a77f30f552c2ae2f2a240c5e4e0"
+    },
+    {
+      "path": "src/comparison_support/graphrag_indexing.py",
+      "source_path": "src/comparison_support/graphrag_indexing.py",
+      "bytes": 5490,
+      "sha256": "d2cd1855c07e0658a06a464e5ee022042b926d6deb4494c730ca31dc4a9dd4f6"
+    },
+    {
+      "path": "src/comparison_support/index_completion.py",
+      "source_path": "src/comparison_support/index_completion.py",
+      "bytes": 2064,
+      "sha256": "51aebe742243af2f75ed09f870fab32d7c078f1f552f151bedf205ad2c7ffa86"
+    },
+    {
+      "path": "third_party/graphrag/CHANGELOG.md",
+      "source_path": "third_party/graphrag/CHANGELOG.md",
+      "bytes": 18039,
+      "sha256": "9fa4b2b0c2456f5d825af3665a5fe74558d385f41889f2d7667fc3acdb2c4f87"
+    },
+    {
+      "path": "third_party/graphrag/LICENSE",
+      "source_path": "third_party/graphrag/LICENSE",
+      "bytes": 1141,
+      "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-cache/graphrag_cache/__init__.py",
+      "source_path": "third_party/graphrag/packages/graphrag-cache/graphrag_cache/__init__.py",
+      "bytes": 546,
+      "sha256": "138fa6417ca44fbc4e485e52ef8bee5e1bc10a57d73b8f710d4160c4e044b441"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-cache/graphrag_cache/cache_config.py",
+      "source_path": "third_party/graphrag/packages/graphrag-cache/graphrag_cache/cache_config.py",
+      "bytes": 854,
+      "sha256": "8c26baa868c001f44c4f41868561660a9092f822a6c4a66767bff754a1fe3110"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-cache/graphrag_cache/cache_factory.py",
+      "source_path": "third_party/graphrag/packages/graphrag-cache/graphrag_cache/cache_factory.py",
+      "bytes": 2554,
+      "sha256": "d44437496c9911492bba0c8608130c4f3492ebb5a9e7177488b276c5080fc3e0"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-cache/graphrag_cache/cache_key.py",
+      "source_path": "third_party/graphrag/packages/graphrag-cache/graphrag_cache/cache_key.py",
+      "bytes": 772,
+      "sha256": "d9a89de7377593df35fa2bcd8130827bb479dcc25c120aacf94465c3301cbc45"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-cache/graphrag_cache/cache_type.py",
+      "source_path": "third_party/graphrag/packages/graphrag-cache/graphrag_cache/cache_type.py",
+      "bytes": 266,
+      "sha256": "d5da3f4b1eb4a7cd9c1f2679d6db76e48a3be9a3defc9d368f916c4400edaee9"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-cache/graphrag_cache/cache.py",
+      "source_path": "third_party/graphrag/packages/graphrag-cache/graphrag_cache/cache.py",
+      "bytes": 1877,
+      "sha256": "2eb767df6d222961f58ecc35958264ea265ce4e178593fc8b9219cabdd882db4"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-cache/graphrag_cache/json_cache.py",
+      "source_path": "third_party/graphrag/packages/graphrag-cache/graphrag_cache/json_cache.py",
+      "bytes": 2258,
+      "sha256": "2e713d46d345320c90ae2bd3b7c3bd7edf52ff1c10297a56ea6718b59ed5d552"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-cache/graphrag_cache/memory_cache.py",
+      "source_path": "third_party/graphrag/packages/graphrag-cache/graphrag_cache/memory_cache.py",
+      "bytes": 1777,
+      "sha256": "4e493ab47a552a8b01741045d0b0967763d8ca0a4d564f31e00d5dc4392a00af"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-cache/graphrag_cache/noop_cache.py",
+      "source_path": "third_party/graphrag/packages/graphrag-cache/graphrag_cache/noop_cache.py",
+      "bytes": 1711,
+      "sha256": "dbaaef805ec54b8d24a99ec8fe80f292006518cecb60598aef9eafee43689092"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-cache/graphrag_cache/py.typed",
+      "source_path": "third_party/graphrag/packages/graphrag-cache/graphrag_cache/py.typed",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-cache/pyproject.toml",
+      "source_path": "third_party/graphrag/packages/graphrag-cache/pyproject.toml",
+      "bytes": 1663,
+      "sha256": "8e66198bd7bccb9c1a465286e54a303ee11f21f3a331b2371f62f0a7e89c36d2"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-cache/README.md",
+      "source_path": "third_party/graphrag/packages/graphrag-cache/README.md",
+      "bytes": 2010,
+      "sha256": "46bb4785337c77c8720dbe4c32647d6064682912c152dc07516d2663d73b149b"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-chunking/graphrag_chunking/__init__.py",
+      "source_path": "third_party/graphrag/packages/graphrag-chunking/graphrag_chunking/__init__.py",
+      "bytes": 115,
+      "sha256": "d19a959741c175cfb2069146e5b39bf4b53efabda2f53f8ce73278a7272690ae"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-chunking/graphrag_chunking/bootstrap_nltk.py",
+      "source_path": "third_party/graphrag/packages/graphrag-chunking/graphrag_chunking/bootstrap_nltk.py",
+      "bytes": 890,
+      "sha256": "8abf13bdbcfcf40e6ccdedf3cb9a58d2d403da7f8146d06b3f4fce3c8c66575a"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-chunking/graphrag_chunking/chunk_strategy_type.py",
+      "source_path": "third_party/graphrag/packages/graphrag-chunking/graphrag_chunking/chunk_strategy_type.py",
+      "bytes": 262,
+      "sha256": "63e92909184812778a593a7e661069452dfd997ed65ef1d27862d3ce3f706514"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-chunking/graphrag_chunking/chunker_factory.py",
+      "source_path": "third_party/graphrag/packages/graphrag-chunking/graphrag_chunking/chunker_factory.py",
+      "bytes": 2431,
+      "sha256": "770372a5c4af8098734977fdc6cf5c01af617b7685b59e3072f44a328cb97552"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-chunking/graphrag_chunking/chunker.py",
+      "source_path": "third_party/graphrag/packages/graphrag-chunking/graphrag_chunking/chunker.py",
+      "bytes": 630,
+      "sha256": "b79edbb63e7402d660ecce9d21d6f8d5ef0f9682b271dee33e66541c3dc5d67e"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-chunking/graphrag_chunking/chunking_config.py",
+      "source_path": "third_party/graphrag/packages/graphrag-chunking/graphrag_chunking/chunking_config.py",
+      "bytes": 1050,
+      "sha256": "699b8e43549637cd128b55c82ce03d249aa5eb856e80e4eee0e37ce6882def7b"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-chunking/graphrag_chunking/create_chunk_results.py",
+      "source_path": "third_party/graphrag/packages/graphrag-chunking/graphrag_chunking/create_chunk_results.py",
+      "bytes": 1085,
+      "sha256": "6cf19019c2f53dd8ec9500a1e5d14d2d9ff5a6a1f087410b5123e7886ba9ed56"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-chunking/graphrag_chunking/sentence_chunker.py",
+      "source_path": "third_party/graphrag/packages/graphrag-chunking/graphrag_chunking/sentence_chunker.py",
+      "bytes": 1753,
+      "sha256": "44911e2b7ce4098614caab3f98a10a54e2f637777c7a5de7730e0e8bd5bb24d7"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-chunking/graphrag_chunking/text_chunk.py",
+      "source_path": "third_party/graphrag/packages/graphrag-chunking/graphrag_chunking/text_chunk.py",
+      "bytes": 746,
+      "sha256": "03e63be40d2e9dfa35816e3a2c9c7d3889527e6c3771921880b81c8e689d6f1e"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-chunking/graphrag_chunking/token_chunker.py",
+      "source_path": "third_party/graphrag/packages/graphrag-chunking/graphrag_chunking/token_chunker.py",
+      "bytes": 2112,
+      "sha256": "8a99f75b410eba934047200a4d8a40c89cc3fe2c3f90fe2a8e0fe1a36f667fe1"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-chunking/graphrag_chunking/transformers.py",
+      "source_path": "third_party/graphrag/packages/graphrag-chunking/graphrag_chunking/transformers.py",
+      "bytes": 781,
+      "sha256": "b0b774f89b11c3d03c78de73acb5d81d2880d9250722e5bb424d774b42169a4d"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-chunking/pyproject.toml",
+      "source_path": "third_party/graphrag/packages/graphrag-chunking/pyproject.toml",
+      "bytes": 1647,
+      "sha256": "dadc375a9cc837a5901f350292859180de007548b6b79a0c8210050ab56bbc77"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-chunking/README.md",
+      "source_path": "third_party/graphrag/packages/graphrag-chunking/README.md",
+      "bytes": 1373,
+      "sha256": "884643caff9b279969ab32d5a2de83e22d72b32e28eceda79cb023f9319761dc"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-common/graphrag_common/__init__.py",
+      "source_path": "third_party/graphrag/packages/graphrag-common/graphrag_common/__init__.py",
+      "bytes": 109,
+      "sha256": "b3af2d2e205f5040e652fc7e1ee8162a36a6c5550b1ecef42c24b80e832553b2"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-common/graphrag_common/config/__init__.py",
+      "source_path": "third_party/graphrag/packages/graphrag-common/graphrag_common/config/__init__.py",
+      "bytes": 241,
+      "sha256": "4a372d92a6f14a9ad94a4a436bdb3ed65dfd77234e3ea7cfc865cd8f7dd1484a"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-common/graphrag_common/config/load_config.py",
+      "source_path": "third_party/graphrag/packages/graphrag-common/graphrag_common/config/load_config.py",
+      "bytes": 7361,
+      "sha256": "f691809d13fc65fcc3e720ce04caae9813e743769c9c381a2b71ed8272532666"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-common/graphrag_common/factory/__init__.py",
+      "source_path": "third_party/graphrag/packages/graphrag-common/graphrag_common/factory/__init__.py",
+      "bytes": 219,
+      "sha256": "515a77287fb049f2525c9a48c93c4f4a697ab4f656b327cdad4209165309a8fa"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-common/graphrag_common/factory/factory.py",
+      "source_path": "third_party/graphrag/packages/graphrag-common/graphrag_common/factory/factory.py",
+      "bytes": 3749,
+      "sha256": "ac75c6918673b4a0ffae277e931624f3edaa8a8d0ede1b5644b94cd66c8d58c8"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-common/graphrag_common/hasher/__init__.py",
+      "source_path": "third_party/graphrag/packages/graphrag-common/graphrag_common/hasher/__init__.py",
+      "bytes": 330,
+      "sha256": "e82c642db5b24c57d0bf04e4933aadc54194b943c412ab89ebf6178562a3df11"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-common/graphrag_common/hasher/hasher.py",
+      "source_path": "third_party/graphrag/packages/graphrag-common/graphrag_common/hasher/hasher.py",
+      "bytes": 1709,
+      "sha256": "25a3d3c099d6aeee0d871f545cd745c15f32ed149bf972d1e8e398211262a2f7"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-common/graphrag_common/py.typed",
+      "source_path": "third_party/graphrag/packages/graphrag-common/graphrag_common/py.typed",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-common/pyproject.toml",
+      "source_path": "third_party/graphrag/packages/graphrag-common/pyproject.toml",
+      "bytes": 1658,
+      "sha256": "3563997db049accfce5b16a4322cb438b88ba178fe929976ec516ffc3d2d03bc"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-common/README.md",
+      "source_path": "third_party/graphrag/packages/graphrag-common/README.md",
+      "bytes": 1319,
+      "sha256": "69e2adc133b1643e7cfc4be91cd0dc9e33f9f5cf6dc685792871d9c1683d0eb0"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-input/graphrag_input/__init__.py",
+      "source_path": "third_party/graphrag/packages/graphrag-input/graphrag_input/__init__.py",
+      "bytes": 590,
+      "sha256": "1f4c45280351fa256030d81deb4e66296d34db3f5df548129bfb49c9080122a7"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-input/graphrag_input/csv.py",
+      "source_path": "third_party/graphrag/packages/graphrag-input/graphrag_input/csv.py",
+      "bytes": 1265,
+      "sha256": "aff7a6a4b4e8f38db6ed2cd42793ee35578fc5f9513861bfd8114c78d308b1e9"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-input/graphrag_input/get_property.py",
+      "source_path": "third_party/graphrag/packages/graphrag-input/graphrag_input/get_property.py",
+      "bytes": 945,
+      "sha256": "a429f60745eb5daaad32cb538dd8d60e846a8dd3f1f020e1edc3749fb64624aa"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-input/graphrag_input/hashing.py",
+      "source_path": "third_party/graphrag/packages/graphrag-input/graphrag_input/hashing.py",
+      "bytes": 713,
+      "sha256": "c946ee4b9496462baf582de7883c85408bd0edbcef86f6ddf845b50d49f8dc16"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-input/graphrag_input/input_config.py",
+      "source_path": "third_party/graphrag/packages/graphrag-input/graphrag_input/input_config.py",
+      "bytes": 1147,
+      "sha256": "49d961108d1e2ff880648f35b22fac9661319cadd39d264545ce8d07f058c397"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-input/graphrag_input/input_reader_factory.py",
+      "source_path": "third_party/graphrag/packages/graphrag-input/graphrag_input/input_reader_factory.py",
+      "bytes": 3230,
+      "sha256": "465c1350afa1d4bb2ae387d0f4482c286adcd8e4df5b25cd9d73831f56048dd7"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-input/graphrag_input/input_reader.py",
+      "source_path": "third_party/graphrag/packages/graphrag-input/graphrag_input/input_reader.py",
+      "bytes": 2584,
+      "sha256": "895767e0d17f0b02deaa68d548620cc3606786221fa1138c91c407b23f25e658"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-input/graphrag_input/input_type.py",
+      "source_path": "third_party/graphrag/packages/graphrag-input/graphrag_input/input_type.py",
+      "bytes": 660,
+      "sha256": "854a4e0fef44456afd17a06099a1427648946f45c922efcc8d9423a3be1be5fe"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-input/graphrag_input/json.py",
+      "source_path": "third_party/graphrag/packages/graphrag-input/graphrag_input/json.py",
+      "bytes": 1236,
+      "sha256": "521d5b00408f0441677170a24f384b78c926bdf7e75c9547c0d5bac8e40d4336"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-input/graphrag_input/jsonl.py",
+      "source_path": "third_party/graphrag/packages/graphrag-input/graphrag_input/jsonl.py",
+      "bytes": 1239,
+      "sha256": "4ae2025787d3398e9d5be722d1ebd3c3cd7731ac5437a5266703b3541b17ea20"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-input/graphrag_input/markitdown.py",
+      "source_path": "third_party/graphrag/packages/graphrag-input/graphrag_input/markitdown.py",
+      "bytes": 1506,
+      "sha256": "ee80b52da699ae7c7232fa5a0b50380d6fe4015c7a5b96132484218b198501a0"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-input/graphrag_input/parquet.py",
+      "source_path": "third_party/graphrag/packages/graphrag-input/graphrag_input/parquet.py",
+      "bytes": 1186,
+      "sha256": "5b66010cdf8c5e0888ff15a875b1b982dd80ccd7b4fa03a7ede24899f403bbd5"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-input/graphrag_input/structured_file_reader.py",
+      "source_path": "third_party/graphrag/packages/graphrag-input/graphrag_input/structured_file_reader.py",
+      "bytes": 2161,
+      "sha256": "1612ecf5b4ec9e66a4cd4ec025d8474c0f4b152e4de1e6ed04c784695de278e1"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-input/graphrag_input/text_document.py",
+      "source_path": "third_party/graphrag/packages/graphrag-input/graphrag_input/text_document.py",
+      "bytes": 1976,
+      "sha256": "0f0ba22abd977843f7d7e68a634bad35c3587230fb9db5740df1128c681d1e14"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-input/graphrag_input/text.py",
+      "source_path": "third_party/graphrag/packages/graphrag-input/graphrag_input/text.py",
+      "bytes": 1324,
+      "sha256": "863c8d88ba9a084c2d515f045ad20a7818d2016fd07d66b60a1c39f2ae07cb19"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-input/pyproject.toml",
+      "source_path": "third_party/graphrag/packages/graphrag-input/pyproject.toml",
+      "bytes": 1762,
+      "sha256": "d45bcee8e025ff0a3c22d3d21b3e44f41e6b1066d1a254ba8f57a7705bb35688"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-input/README.md",
+      "source_path": "third_party/graphrag/packages/graphrag-input/README.md",
+      "bytes": 1616,
+      "sha256": "eb8867ed4004642cd680b34a42d3126e7e245058e8cfde107180d53c3fd73863"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/__init__.py",
+      "source_path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/__init__.py",
+      "bytes": 167,
+      "sha256": "86a765ce752a2bedc648bfcc98a9e7768ae63e05b54ef3478666c1c62534274b"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/cache/__init__.py",
+      "source_path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/cache/__init__.py",
+      "bytes": 203,
+      "sha256": "d5e561f4a72fe2695565ede7dfccb812e6a3fa5eae0c7859f9219b652a465624"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/cache/create_cache_key.py",
+      "source_path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/cache/create_cache_key.py",
+      "bytes": 2013,
+      "sha256": "9c38a5f3dde2251a46303fb63f3605690efaedf02b93c3a380caa04738d4985b"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/completion/__init__.py",
+      "source_path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/completion/__init__.py",
+      "bytes": 377,
+      "sha256": "121c376d1f28854046e8db5d2baa26bd4d40547b5c2acbb525413d0e9137f169"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/completion/completion_factory.py",
+      "source_path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/completion/completion_factory.py",
+      "bytes": 5270,
+      "sha256": "a24e0eefddcda714cbbf337b37cb1f802fdea5c07ea6f934e529618c74d780b0"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/completion/completion.py",
+      "source_path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/completion/completion.py",
+      "bytes": 10278,
+      "sha256": "337f4a47a2ec9ecc4567fa10f97d07a213d9481da4b1736cef3fe59b46c88186"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/completion/lite_llm_completion.py",
+      "source_path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/completion/lite_llm_completion.py",
+      "bytes": 11410,
+      "sha256": "642df123a3667c4f3a585986c91ab48625b79962ced1a8f1d6601f4999c58164"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/completion/mock_llm_completion.py",
+      "source_path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/completion/mock_llm_completion.py",
+      "bytes": 4445,
+      "sha256": "3f46dff9bc56dc2dd05819dc212057ec40b674938dd85b4f7acbf9e3838bde7f"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/config/__init__.py",
+      "source_path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/config/__init__.py",
+      "bytes": 1129,
+      "sha256": "5ca583634fafb387d465f1e8b733134051961d25f872338590751706481cf32f"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/config/metrics_config.py",
+      "source_path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/config/metrics_config.py",
+      "bytes": 1828,
+      "sha256": "b045f63c270eb5b877adc70e4e39fbb2fe9afafc57f4560a019f59ba278889bb"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/config/model_config.py",
+      "source_path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/config/model_config.py",
+      "bytes": 3640,
+      "sha256": "4b7ebd54acdb5a958cf48242d7574a82c02b7fb4c13c3f2ab69ce51ef59b1892"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/config/rate_limit_config.py",
+      "source_path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/config/rate_limit_config.py",
+      "bytes": 2372,
+      "sha256": "98850a49a510ef644ddbee3feae1ebb950ff6a7c6636abd3d31c784465973b72"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/config/retry_config.py",
+      "source_path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/config/retry_config.py",
+      "bytes": 2493,
+      "sha256": "0dedba032a26cac6062b0969e6d3e814743a8bdb6dadc639709a6aa57bdf08bb"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/config/template_engine_config.py",
+      "source_path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/config/template_engine_config.py",
+      "bytes": 2310,
+      "sha256": "a0f7149ba9528f0c4f54914197b74ee964e0e2571f1d163dd391747be7ec229e"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/config/tokenizer_config.py",
+      "source_path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/config/tokenizer_config.py",
+      "bytes": 1823,
+      "sha256": "8ae9eeb3db711a703dabe23a21d37fce6c1d2547e28a84b9d7ddc585a591ff78"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/config/types.py",
+      "source_path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/config/types.py",
+      "bytes": 1348,
+      "sha256": "dda52d36c3a8dd35e79849f70ab5b64eb094439edc31d74d0679258da8615bb7"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/embedding/__init__.py",
+      "source_path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/embedding/__init__.py",
+      "bytes": 369,
+      "sha256": "ad9368376b2b69330407b7e5f85bf4841d43cc5d3e6f8155ab018455c1436707"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/embedding/embedding_factory.py",
+      "source_path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/embedding/embedding_factory.py",
+      "bytes": 5198,
+      "sha256": "fe052bd4f1afeda1890287c24c4550ae163523f47e9bcc63dc2d8b1cabac1f69"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/embedding/embedding.py",
+      "source_path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/embedding/embedding.py",
+      "bytes": 6639,
+      "sha256": "703e7b43f1324b7ddb4d96f403ce905b72aa56a57d9c6404bb1c4a8fdce59dac"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/embedding/lite_llm_embedding.py",
+      "source_path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/embedding/lite_llm_embedding.py",
+      "bytes": 7338,
+      "sha256": "d86e07aab41dfaa7347c69906b63570d6636abc8040b0c42906a302f54656426"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/embedding/mock_llm_embedding.py",
+      "source_path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/embedding/mock_llm_embedding.py",
+      "bytes": 2373,
+      "sha256": "f180182a2508ae7034459675a270684cf7716f926eef00a15b8d9ee4c32f18c7"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/metrics/__init__.py",
+      "source_path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/metrics/__init__.py",
+      "bytes": 1023,
+      "sha256": "cfeff41941a0b791d8560ee25e99ee649d17aa8a67d16f1db9229b0b4929ee73"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/metrics/default_metrics_processor.py",
+      "source_path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/metrics/default_metrics_processor.py",
+      "bytes": 4501,
+      "sha256": "48ccf8802923019601d69d62dc115c5b776b08434d26c9d51c7e922b587f4a2c"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/metrics/file_metrics_writer.py",
+      "source_path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/metrics/file_metrics_writer.py",
+      "bytes": 1231,
+      "sha256": "c1052cde753e0a9e462e741ebd9a2ba41e523fc9b79b75bae2d5bed60b9f5dbd"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/metrics/log_metrics_writer.py",
+      "source_path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/metrics/log_metrics_writer.py",
+      "bytes": 1150,
+      "sha256": "113b100be79b775d78889e2fcfe4c360cce28fa0c57e375d746176dec17a8d92"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/metrics/memory_metrics_store.py",
+      "source_path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/metrics/memory_metrics_store.py",
+      "bytes": 3209,
+      "sha256": "1690887e9077520452bc01e103215019efb837b5bab3bf059a59ff46a67e1945"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/metrics/metrics_aggregator.py",
+      "source_path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/metrics/metrics_aggregator.py",
+      "bytes": 4845,
+      "sha256": "96559275691a7ced9865769c97c0e2d71bdc947d55fa5c36cc5dd32fdb6f555a"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/metrics/metrics_processor_factory.py",
+      "source_path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/metrics/metrics_processor_factory.py",
+      "bytes": 2464,
+      "sha256": "dd7b96502b0950b4da9586494ef55c3a573221df4a79d0d5d92d3d3975914f97"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/metrics/metrics_processor.py",
+      "source_path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/metrics/metrics_processor.py",
+      "bytes": 1650,
+      "sha256": "a5b4992cb38970770b8bd45a79cac6d6ff264cdf68bc2baa8a8d8681a10f733a"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/metrics/metrics_store_factory.py",
+      "source_path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/metrics/metrics_store_factory.py",
+      "bytes": 2791,
+      "sha256": "1368cd4ac51095602eaa848e10179c089ee4f4d2aa6246a4868c57ecc7d8924a"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/metrics/metrics_store.py",
+      "source_path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/metrics/metrics_store.py",
+      "bytes": 1986,
+      "sha256": "441b64500d07e6d5ab299c0869c3922e90d2ebad1b317b12d7b7693c7e881f1f"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/metrics/metrics_writer_factory.py",
+      "source_path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/metrics/metrics_writer_factory.py",
+      "bytes": 2911,
+      "sha256": "a415201c5b234b8ed0480a67af5699fbefcdd6024cf2fe7cd7743c8f8bcef443"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/metrics/metrics_writer.py",
+      "source_path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/metrics/metrics_writer.py",
+      "bytes": 819,
+      "sha256": "4c2a088b9bb1fb920fb6222105701ab7f8173981387a5b96581dc8b676793660"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/metrics/noop_metrics_store.py",
+      "source_path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/metrics/noop_metrics_store.py",
+      "bytes": 891,
+      "sha256": "329eb916e78091bad611d8f6269f86a81f7e419420ddfbe41424a413328ea3c4"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/middleware/__init__.py",
+      "source_path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/middleware/__init__.py",
+      "bytes": 867,
+      "sha256": "b53f7d1fb0a6f0e8038dae0e06cd79fd28fccead9ce5e9566c56ff5b4e59c3bf"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/middleware/with_cache.py",
+      "source_path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/middleware/with_cache.py",
+      "bytes": 5358,
+      "sha256": "636411eba2fc8a8bb2c6416593c8e332b5e107ee5c537902674e74ee33a30c44"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/middleware/with_errors_for_testing.py",
+      "source_path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/middleware/with_errors_for_testing.py",
+      "bytes": 2604,
+      "sha256": "ac083fc242010014480685c67428ff75be8d6bdeab682207d19456481b24c869"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/middleware/with_logging.py",
+      "source_path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/middleware/with_logging.py",
+      "bytes": 2181,
+      "sha256": "d7390cac5605416dd371e49b6bc84ee15e353f8167fc64b6bb60010247cc5d73"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/middleware/with_metrics.py",
+      "source_path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/middleware/with_metrics.py",
+      "bytes": 3040,
+      "sha256": "08152cb4f129ae2966d684d5a593e0c2b71e472399e5d27dbcc3ce2f723b6192"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/middleware/with_middleware_pipeline.py",
+      "source_path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/middleware/with_middleware_pipeline.py",
+      "bytes": 5941,
+      "sha256": "23c14325d85b7ca2dac5a11817f6cfacb7e91d32f4a6ddba11a42244df306f3c"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/middleware/with_rate_limiting.py",
+      "source_path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/middleware/with_rate_limiting.py",
+      "bytes": 2592,
+      "sha256": "e7336c84d57953ecb2c2b7bebf63b325e14fd0fd7e1b375832252f4e9e15b364"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/middleware/with_request_count.py",
+      "source_path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/middleware/with_request_count.py",
+      "bytes": 2537,
+      "sha256": "7ef134432dd00f27636ff2794c3ac20c6e11f994eee16ac2710cbf2f8dbb2702"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/middleware/with_retries.py",
+      "source_path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/middleware/with_retries.py",
+      "bytes": 1552,
+      "sha256": "e07869610758ef1c07d03cc0703d5771c0ae17a9a8e7eae88997eb1eef2e4e63"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/model_cost_registry/__init__.py",
+      "source_path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/model_cost_registry/__init__.py",
+      "bytes": 272,
+      "sha256": "8e1e1b8fcf355413da1a76232fa73cd9a128c0a23a4edf037ca8aba3040e2f0c"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/model_cost_registry/model_cost_registry.py",
+      "source_path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/model_cost_registry/model_cost_registry.py",
+      "bytes": 1747,
+      "sha256": "c0bd470bbf43a7ee1435d02e3431a8c70da6a3a6887546b5fdae2545166c4420"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/py.typed",
+      "source_path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/py.typed",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/rate_limit/__init__.py",
+      "source_path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/rate_limit/__init__.py",
+      "bytes": 383,
+      "sha256": "2d7ac0e2b3eeb5bc8b1d4e908617c195da58e15a7cbe2541548430094da91f4a"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/rate_limit/rate_limit_factory.py",
+      "source_path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/rate_limit/rate_limit_factory.py",
+      "bytes": 2469,
+      "sha256": "9d2b1c1863a4ce719062e7b99b1a85fd7a942b97ba426428ae982adbfa359053"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/rate_limit/rate_limiter.py",
+      "source_path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/rate_limit/rate_limiter.py",
+      "bytes": 917,
+      "sha256": "90adec3ebcf180537c761df4d063ac916520e1e9841eaafd1adae2f972c19841"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/rate_limit/sliding_window_rate_limiter.py",
+      "source_path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/rate_limit/sliding_window_rate_limiter.py",
+      "bytes": 5406,
+      "sha256": "af6ee9f97efd268548f9e837ca7f3926fcd87fda42ad3c8fad0f524abb1160de"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/README.md",
+      "source_path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/README.md",
+      "bytes": 2508,
+      "sha256": "d2450e180b7587f9f77e46d7995fdd06604b21baf5e1a10dfe5da59b7d3237be"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/retry/__init__.py",
+      "source_path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/retry/__init__.py",
+      "bytes": 303,
+      "sha256": "94a07157edae5f39923a1b8efaee0e2e22d39d3c592f4983ed4121b999610edd"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/retry/exceptions_to_skip.py",
+      "source_path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/retry/exceptions_to_skip.py",
+      "bytes": 579,
+      "sha256": "9f75d1fcd62d46ee7a08b6d30f21aaf0e2689a9885243ee910706717795fe84b"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/retry/exponential_retry.py",
+      "source_path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/retry/exponential_retry.py",
+      "bytes": 3973,
+      "sha256": "e6a8419eb1b6ee0b4e3bdd4cf6a24182ba33d1610c428b44e8ef664a10b25f1e"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/retry/immediate_retry.py",
+      "source_path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/retry/immediate_retry.py",
+      "bytes": 2613,
+      "sha256": "60251bddbf36a80db3ca79569540abf54ba791d8a626342d30cae9d477326f08"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/retry/retry_factory.py",
+      "source_path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/retry/retry_factory.py",
+      "bytes": 2338,
+      "sha256": "35fbc088355accd9bc5af641eb94d5f8dbac4871531ca10613889c18129354a9"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/retry/retry.py",
+      "source_path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/retry/retry.py",
+      "bytes": 837,
+      "sha256": "a415e015f8356cce75f5de47cd107f5b02919a45bdf0d7fd65235f179d76d4b7"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/templating/__init__.py",
+      "source_path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/templating/__init__.py",
+      "bytes": 672,
+      "sha256": "f85da06cecef3ac2301dafd3f970fa27f2d929fb538cb6b2d7a5024594b90907"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/templating/file_template_manager.py",
+      "source_path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/templating/file_template_manager.py",
+      "bytes": 2578,
+      "sha256": "3df3e8c5e75f19ce9004a8264ac1acc5edd20a73dbf254848e83024adb5696b7"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/templating/jinja_template_engine.py",
+      "source_path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/templating/jinja_template_engine.py",
+      "bytes": 2010,
+      "sha256": "c2aee57fd9650edd2e3ddf19eccb7b04c98143f565587b807c54e5253e77063b"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/templating/template_engine_factory.py",
+      "source_path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/templating/template_engine_factory.py",
+      "bytes": 3103,
+      "sha256": "6747676ecfbca0f8e0bd504fd82ced7de5ce76af2f53d485ec30f1c8d493b168"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/templating/template_engine.py",
+      "source_path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/templating/template_engine.py",
+      "bytes": 1497,
+      "sha256": "03aba5b607d35844c41cfe0e0f5ddccc6d0d6521208e78ee2ecab141c56171ee"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/templating/template_manager_factory.py",
+      "source_path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/templating/template_manager_factory.py",
+      "bytes": 2715,
+      "sha256": "afd212554d94e6844d155f568990fbba60ed46f1f0c6688bf79d1877df682bc9"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/templating/template_manager.py",
+      "source_path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/templating/template_manager.py",
+      "bytes": 1650,
+      "sha256": "d77afb6b78edfb2812c0cc0593789b21f36979b834e30a0fc9c2e1c1c5836111"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/threading/__init__.py",
+      "source_path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/threading/__init__.py",
+      "bytes": 235,
+      "sha256": "d523f85169c8de3c38f81019a0ce6cfec281b77920fd95f552ca9cd120f02b3a"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/threading/completion_thread_runner.py",
+      "source_path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/threading/completion_thread_runner.py",
+      "bytes": 8098,
+      "sha256": "0ba318dcc9610811391697f9933b745efbda5ca496dc7c481c74343ab19e7cd1"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/threading/completion_thread.py",
+      "source_path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/threading/completion_thread.py",
+      "bytes": 2849,
+      "sha256": "9fe881d0040e56e07c068a74f69eaa7f4de93ef33b64e1d6b0fb0f1cf65f4ea5"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/threading/embedding_thread_runner.py",
+      "source_path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/threading/embedding_thread_runner.py",
+      "bytes": 6584,
+      "sha256": "0e02aa26b3b3456adb9f514f3ef5db9ef1b6ce213857802b0592ec3dcbf81844"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/threading/embedding_thread.py",
+      "source_path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/threading/embedding_thread.py",
+      "bytes": 2704,
+      "sha256": "d1225517d7a69943260119532f461ee237b91e464a582a7c8525ea8697a39499"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/tokenizer/__init__.py",
+      "source_path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/tokenizer/__init__.py",
+      "bytes": 343,
+      "sha256": "d1f89d351eaeb47ce580f0b45a6f3aa0520186727cf1e16a86840a51e753e824"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/tokenizer/lite_llm_tokenizer.py",
+      "source_path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/tokenizer/lite_llm_tokenizer.py",
+      "bytes": 1327,
+      "sha256": "09af08a7c7874170a65e4cb7a24219fb193191e2940418434deef2adf019ae08"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/tokenizer/tiktoken_tokenizer.py",
+      "source_path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/tokenizer/tiktoken_tokenizer.py",
+      "bytes": 1345,
+      "sha256": "d4d832aa5b5f220687349aa6a052e8f0009b6e5844c809ff00d1853941e95034"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/tokenizer/tokenizer_factory.py",
+      "source_path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/tokenizer/tokenizer_factory.py",
+      "bytes": 2605,
+      "sha256": "fc52873d33ea081e1a5fbdc43a70b816a62ba5c319292e23e550dcba439f2afa"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/tokenizer/tokenizer.py",
+      "source_path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/tokenizer/tokenizer.py",
+      "bytes": 3426,
+      "sha256": "8ab38bb0565d05ae1f95a6099dfb75d327d66ca08b5ad9e64d3ae14f31f9ad07"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/types/__init__.py",
+      "source_path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/types/__init__.py",
+      "bytes": 1388,
+      "sha256": "a073890b47cd0a665121889644d823532a1992cfcd8caf95887c4ba3a57885cb"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/types/types.py",
+      "source_path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/types/types.py",
+      "bytes": 7979,
+      "sha256": "ce38b8d58434db354f174a9809df6759da3c624bb7d782d8da01471e9e9d242a"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/utils/__init__.py",
+      "source_path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/utils/__init__.py",
+      "bytes": 1138,
+      "sha256": "26cf4e3067413f3707bbdd1c18b09a71b9396e80f980b3af638f1d1f1db82884"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/utils/completion_messages_builder.py",
+      "source_path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/utils/completion_messages_builder.py",
+      "bytes": 9687,
+      "sha256": "8d133357abb31e869f3e5f4f0d4856166cc4eb13a1505bd62269ed8122bdb950"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/utils/create_completion_response.py",
+      "source_path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/utils/create_completion_response.py",
+      "bytes": 1102,
+      "sha256": "1a4ca5af1446cd612193b7632aad68b1b2c95ab242df933c28463cb672d022f6"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/utils/create_embedding_response.py",
+      "source_path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/utils/create_embedding_response.py",
+      "bytes": 971,
+      "sha256": "c408e282d948c2641b670f0010994d75911947d7baabb10e7c932870b56b4449"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/utils/function_tool_manager.py",
+      "source_path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/utils/function_tool_manager.py",
+      "bytes": 4123,
+      "sha256": "eadad46873ea3f75810a92e1fb4abbcb24a89730fda318d4cbc1a9a9c29ee7bf"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/utils/gather_completion_response.py",
+      "source_path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/utils/gather_completion_response.py",
+      "bytes": 1648,
+      "sha256": "26eef8b5b6d7701dc8fb3f937f5bb0ba0ff737a5fa56ddfe11dfc29a877192cc"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/utils/structure_response.py",
+      "source_path": "third_party/graphrag/packages/graphrag-llm/graphrag_llm/utils/structure_response.py",
+      "bytes": 758,
+      "sha256": "f1fd73aec047e058817510b4301b40ae4049eb595eb00b902057fb00ad10e7c9"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-llm/pyproject.toml",
+      "source_path": "third_party/graphrag/packages/graphrag-llm/pyproject.toml",
+      "bytes": 1851,
+      "sha256": "56d1dda49515f176791f66d8e38ba3e61dff8a5ae04674a14d6a85a8c29e0d7c"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-llm/README.md",
+      "source_path": "third_party/graphrag/packages/graphrag-llm/README.md",
+      "bytes": 1409,
+      "sha256": "57e1091e28a955317eaf7e5f498d885fdebd3f9e4225d2edacedb71e94cd7839"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-storage/COSMOS_TABLE_PROVIDER_DESIGN.md",
+      "source_path": "third_party/graphrag/packages/graphrag-storage/COSMOS_TABLE_PROVIDER_DESIGN.md",
+      "bytes": 20785,
+      "sha256": "258d20eb6d51077f80c54479ba319bae9bd63fd8c8590fd7e20014e555e5e1f5"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-storage/graphrag_storage/__init__.py",
+      "source_path": "third_party/graphrag/packages/graphrag-storage/graphrag_storage/__init__.py",
+      "bytes": 550,
+      "sha256": "467bdac55765044ac34c3bed81407e98f29f76f83e402673126de9f08dd932d2"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-storage/graphrag_storage/azure_blob_storage.py",
+      "source_path": "third_party/graphrag/packages/graphrag-storage/graphrag_storage/azure_blob_storage.py",
+      "bytes": 10037,
+      "sha256": "37d63b1d6dd8ad55a52a1cb6e7db19aafa925234f39f68fad2b3fa6920d546fa"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-storage/graphrag_storage/azure_cosmos_storage.py",
+      "source_path": "third_party/graphrag/packages/graphrag-storage/graphrag_storage/azure_cosmos_storage.py",
+      "bytes": 11935,
+      "sha256": "a3c3335d8b127f83b03e50db4fd05af1a04207ec67e383b2535f4c4bb601c31d"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-storage/graphrag_storage/file_storage.py",
+      "source_path": "third_party/graphrag/packages/graphrag-storage/graphrag_storage/file_storage.py",
+      "bytes": 5037,
+      "sha256": "6a52ad374fb8fea95d3f5e361fa78437f9045108e4e20701217a6c973e8da9bd"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-storage/graphrag_storage/memory_storage.py",
+      "source_path": "third_party/graphrag/packages/graphrag-storage/graphrag_storage/memory_storage.py",
+      "bytes": 2757,
+      "sha256": "162fe4d9d813af0a2ae8c1ff68e03eb2639779abe0cd87acd325ab001363097b"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-storage/graphrag_storage/py.typed",
+      "source_path": "third_party/graphrag/packages/graphrag-storage/graphrag_storage/py.typed",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-storage/graphrag_storage/storage_config.py",
+      "source_path": "third_party/graphrag/packages/graphrag-storage/graphrag_storage/storage_config.py",
+      "bytes": 1427,
+      "sha256": "956c3d52a0a0ef1e2ef63aee99c0adc11f6955ec0dea56d237fca9e1db3fb761"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-storage/graphrag_storage/storage_factory.py",
+      "source_path": "third_party/graphrag/packages/graphrag-storage/graphrag_storage/storage_factory.py",
+      "bytes": 2486,
+      "sha256": "070e5cc625af4db5de204600a50cc9fefd522431088cc897f6b167c7e084785d"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-storage/graphrag_storage/storage_type.py",
+      "source_path": "third_party/graphrag/packages/graphrag-storage/graphrag_storage/storage_type.py",
+      "bytes": 306,
+      "sha256": "14b422994a18555053b7d9c84958d1d64616ecba8b0503260b1b809205716912"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-storage/graphrag_storage/storage.py",
+      "source_path": "third_party/graphrag/packages/graphrag-storage/graphrag_storage/storage.py",
+      "bytes": 3476,
+      "sha256": "3371a76e5bc9dc5d792f1ccea93ed891093c533992603c998a0b6b81aad7a54a"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-storage/graphrag_storage/tables/__init__.py",
+      "source_path": "third_party/graphrag/packages/graphrag-storage/graphrag_storage/tables/__init__.py",
+      "bytes": 234,
+      "sha256": "54e3c3ee19cd26b3b85863e6618565632550912237d8b8e987de602ded17b70e"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-storage/graphrag_storage/tables/cosmos_table_provider.py",
+      "source_path": "third_party/graphrag/packages/graphrag-storage/graphrag_storage/tables/cosmos_table_provider.py",
+      "bytes": 18685,
+      "sha256": "bfe09d9cf7b6ced617a29f12dff91d2da3270a99e6ead9d2e0930796278785b7"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-storage/graphrag_storage/tables/cosmos_table.py",
+      "source_path": "third_party/graphrag/packages/graphrag-storage/graphrag_storage/tables/cosmos_table.py",
+      "bytes": 6430,
+      "sha256": "8e63159f8bcd79f9c74d64c1612581acdca8c7597d7299ea1307a211cb4cc9bb"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-storage/graphrag_storage/tables/csv_table_provider.py",
+      "source_path": "third_party/graphrag/packages/graphrag-storage/graphrag_storage/tables/csv_table_provider.py",
+      "bytes": 5059,
+      "sha256": "81414fd356883d53ef7d6fa23648dd82d44eabd7ea2b58c0f42690b6192d00a0"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-storage/graphrag_storage/tables/csv_table.py",
+      "source_path": "third_party/graphrag/packages/graphrag-storage/graphrag_storage/tables/csv_table.py",
+      "bytes": 7152,
+      "sha256": "6521fbcf98e74f624591c55e6d72d144a112feeb76e0a556c133f352ae8a5463"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-storage/graphrag_storage/tables/parquet_table_provider.py",
+      "source_path": "third_party/graphrag/packages/graphrag-storage/graphrag_storage/tables/parquet_table_provider.py",
+      "bytes": 4743,
+      "sha256": "c9cf2990eaba0e274bf3d30808be298c4f8ac398f3c348021e4a7514b3cc11d5"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-storage/graphrag_storage/tables/parquet_table.py",
+      "source_path": "third_party/graphrag/packages/graphrag-storage/graphrag_storage/tables/parquet_table.py",
+      "bytes": 5298,
+      "sha256": "5298c3b7197cb16a229ec6631cd5805c24f9a5a59961f16c4d0770dd0bfc6f31"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-storage/graphrag_storage/tables/table_provider_config.py",
+      "source_path": "third_party/graphrag/packages/graphrag-storage/graphrag_storage/tables/table_provider_config.py",
+      "bytes": 1081,
+      "sha256": "ead6dc1060bd29a315215f4dbbd0d41c57944e3df132701b848ebdf37e3c3cb5"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-storage/graphrag_storage/tables/table_provider_factory.py",
+      "source_path": "third_party/graphrag/packages/graphrag-storage/graphrag_storage/tables/table_provider_factory.py",
+      "bytes": 3807,
+      "sha256": "866fd49f0a8b40518b527e5d517fd713ee1ff808cfe7ab5e1756b407dbdb835a"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-storage/graphrag_storage/tables/table_provider.py",
+      "source_path": "third_party/graphrag/packages/graphrag-storage/graphrag_storage/tables/table_provider.py",
+      "bytes": 3309,
+      "sha256": "0e956cb1e9e1967080464a8128d3684222be81b8834968cd5607b12f3615017f"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-storage/graphrag_storage/tables/table_type.py",
+      "source_path": "third_party/graphrag/packages/graphrag-storage/graphrag_storage/tables/table_type.py",
+      "bytes": 290,
+      "sha256": "ac3aaf25de33795ce6efe1717b83cb2d97945b2d4c444a0ef28879f3143687ec"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-storage/graphrag_storage/tables/table.py",
+      "source_path": "third_party/graphrag/packages/graphrag-storage/graphrag_storage/tables/table.py",
+      "bytes": 3296,
+      "sha256": "b822d0353992a825c7bc0d54b790e5791406034de74479e97d319ecbb07411f7"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-storage/pyproject.toml",
+      "source_path": "third_party/graphrag/packages/graphrag-storage/pyproject.toml",
+      "bytes": 1767,
+      "sha256": "0d9b025f89307949953800d24758ba681a801a793ac2b476649c06d3f96738e7"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-storage/README.md",
+      "source_path": "third_party/graphrag/packages/graphrag-storage/README.md",
+      "bytes": 2461,
+      "sha256": "bd314ae9524a698d5cd0b7ae8bf3269fbbc1b63377b7ade44763fdbb009d6916"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-vectors/graphrag_vectors/__init__.py",
+      "source_path": "third_party/graphrag/packages/graphrag-vectors/graphrag_vectors/__init__.py",
+      "bytes": 1237,
+      "sha256": "418e5ba294136887ffbe5364f08089073d37523d04b25cf925fef5ff32d492c9"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-vectors/graphrag_vectors/azure_ai_search.py",
+      "source_path": "third_party/graphrag/packages/graphrag-vectors/graphrag_vectors/azure_ai_search.py",
+      "bytes": 13179,
+      "sha256": "1e05cfeecf06d9fee941f1a1ba5719f862ba7460e095776b0cb8bf6ef6e8675c"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-vectors/graphrag_vectors/cosmosdb.py",
+      "source_path": "third_party/graphrag/packages/graphrag-vectors/graphrag_vectors/cosmosdb.py",
+      "bytes": 15763,
+      "sha256": "47f2407d541d427c88d352ab2d64d41c1859b8f76ce681f428988b0477fc9775"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-vectors/graphrag_vectors/filtering.py",
+      "source_path": "third_party/graphrag/packages/graphrag-vectors/graphrag_vectors/filtering.py",
+      "bytes": 12149,
+      "sha256": "6b0af8b205ac2f31a46b23d65a6c40a37fcdde3351d57c74ea682c016842c16f"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-vectors/graphrag_vectors/index_schema.py",
+      "source_path": "third_party/graphrag/packages/graphrag-vectors/graphrag_vectors/index_schema.py",
+      "bytes": 1630,
+      "sha256": "f0d9726e027797684705688971bc48c533edbe3c0791a3d79937f09741f07153"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-vectors/graphrag_vectors/lancedb.py",
+      "source_path": "third_party/graphrag/packages/graphrag-vectors/graphrag_vectors/lancedb.py",
+      "bytes": 10142,
+      "sha256": "97231abc2f725756549277bdc29bb5c78961f9778dbc095ca95891a77a5b4217"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-vectors/graphrag_vectors/timestamp.py",
+      "source_path": "third_party/graphrag/packages/graphrag-vectors/graphrag_vectors/timestamp.py",
+      "bytes": 2875,
+      "sha256": "03acbb2b6d9aad84c3202cdaeb5a7303425a3f555879bb0b38c16c3f5f90d3f7"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-vectors/graphrag_vectors/types.py",
+      "source_path": "third_party/graphrag/packages/graphrag-vectors/graphrag_vectors/types.py",
+      "bytes": 199,
+      "sha256": "9a3043c300a0851eca1b06cbe34006f1c7136d808d55f645152f3df56389d8d4"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-vectors/graphrag_vectors/vector_store_config.py",
+      "source_path": "third_party/graphrag/packages/graphrag-vectors/graphrag_vectors/vector_store_config.py",
+      "bytes": 1754,
+      "sha256": "b6291cd02ec67347f11cb91744cedff30edcc28b09b0c7f7edc04db146c18a11"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-vectors/graphrag_vectors/vector_store_factory.py",
+      "source_path": "third_party/graphrag/packages/graphrag-vectors/graphrag_vectors/vector_store_factory.py",
+      "bytes": 3447,
+      "sha256": "abceaa87f0aa30976ec40a5e17864469ebde68e9f9f8f651e4be3807e066fca7"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-vectors/graphrag_vectors/vector_store_type.py",
+      "source_path": "third_party/graphrag/packages/graphrag-vectors/graphrag_vectors/vector_store_type.py",
+      "bytes": 301,
+      "sha256": "51cab3d23382847b68fb43ec4587202745b27137daed1e3b682e3184ba9ec85f"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-vectors/graphrag_vectors/vector_store.py",
+      "source_path": "third_party/graphrag/packages/graphrag-vectors/graphrag_vectors/vector_store.py",
+      "bytes": 7058,
+      "sha256": "1a7afe35dcc5b39343664fd2bd6d280711bf4cc5a89184cef1c374ec70cc8cfb"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-vectors/pyproject.toml",
+      "source_path": "third_party/graphrag/packages/graphrag-vectors/pyproject.toml",
+      "bytes": 1819,
+      "sha256": "b58f48a062f73ba111823fb028e6f55462c09f8ad097f5f523f7274307f8c353"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag-vectors/README.md",
+      "source_path": "third_party/graphrag/packages/graphrag-vectors/README.md",
+      "bytes": 2017,
+      "sha256": "bd9821e19c5e6caeb173696ffef282017dfa6e586599a1b885502c9616f6569c"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/__init__.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/__init__.py",
+      "bytes": 106,
+      "sha256": "1971e2f23c84b1bf807a986a0498d8568e54bb4396bc06e1efcbf944facfdc64"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/__main__.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/__main__.py",
+      "bytes": 168,
+      "sha256": "a261dedc5d9bb246561f5171110fb371218d4bbc1cc149da9172cae93dc83714"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/api/__init__.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/api/__init__.py",
+      "bytes": 992,
+      "sha256": "7d46f4834004490bc0718ad7a7753a99427789cdfd516090459ffe994c00417f"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/api/index.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/api/index.py",
+      "bytes": 3615,
+      "sha256": "7a53f83f5be4dfb043eae49006c3bc40fd66331c97df4623c3c4fdc035fd7ca6"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/api/prompt_tune.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/api/prompt_tune.py",
+      "bytes": 6940,
+      "sha256": "0dcb8df74f49aef325e9814914bc722c19f2cf8aaa99ced25c1e874f54a6d586"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/api/query.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/api/query.py",
+      "bytes": 20270,
+      "sha256": "542065f7d48f53ba37870224259decf289109829a2e10389b54f14cb2f5c57f8"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/cache/__init__.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/cache/__init__.py",
+      "bytes": 98,
+      "sha256": "836a9956fe08a47c7a032bb68d0e9f5216b28754dfc3bf946ade0592976dedf3"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/cache/cache_key_creator.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/cache/cache_key_creator.py",
+      "bytes": 1345,
+      "sha256": "4faf28eab3daf6dff8072d964cf96200115866f0f841b7295ecba19e6762d3c3"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/callbacks/__init__.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/callbacks/__init__.py",
+      "bytes": 131,
+      "sha256": "1cf9443e676bceb35fe92b92cec0ecf87f3f2ecb3f4ae640e7bc6c177c2cc82b"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/callbacks/console_workflow_callbacks.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/callbacks/console_workflow_callbacks.py",
+      "bytes": 1936,
+      "sha256": "51ced9f5ef0f961e714a69e147ee40ef090dd86bc04c00acbf5f7e4a04852846"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/callbacks/llm_callbacks.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/callbacks/llm_callbacks.py",
+      "bytes": 312,
+      "sha256": "bcbe699c2686f40ef2b2482394b40e7127f77b463888466188817f8d1b014123"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/callbacks/noop_query_callbacks.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/callbacks/noop_query_callbacks.py",
+      "bytes": 1099,
+      "sha256": "1e3f8f59a0b2fc39aa79b0344defbc4a1fc2a4d65b9696d0af8fa4b2c4505b30"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/callbacks/noop_workflow_callbacks.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/callbacks/noop_workflow_callbacks.py",
+      "bytes": 1229,
+      "sha256": "5df1d284d3c9d0a71adfc9ed24d4b84336b1e8ca0dda50bee54e84cf44193517"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/callbacks/query_callbacks.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/callbacks/query_callbacks.py",
+      "bytes": 1094,
+      "sha256": "fce547502a643255780982611d04f55a2a13e53734fdde90ec5f2f81b8bcc425"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/callbacks/workflow_callbacks_manager.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/callbacks/workflow_callbacks_manager.py",
+      "bytes": 2332,
+      "sha256": "114f89c3d9fa510cc9abd105be3b1d4a3c80ad38ea03b5ae201aea0a9f4e4875"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/callbacks/workflow_callbacks.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/callbacks/workflow_callbacks.py",
+      "bytes": 1390,
+      "sha256": "b162d85ab25faf4ebb7e69a64048a763c7bc12b108a86892e8ee6c05c20a505c"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/cli/__init__.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/cli/__init__.py",
+      "bytes": 102,
+      "sha256": "bbff7518e4a12a50884decdea427a7a6af3849c9dd0bccdbd037c875d9377be7"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/cli/index.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/cli/index.py",
+      "bytes": 3286,
+      "sha256": "456328ec2e1484883f353d1b19e69137c45963a7da1b79855494be54c586aaff"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/cli/initialize.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/cli/initialize.py",
+      "bytes": 3972,
+      "sha256": "239e0dea0a7caab8d1ca83a3b75227022fa90eae04dee3324f06594f3dc81777"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/cli/main.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/cli/main.py",
+      "bytes": 13839,
+      "sha256": "0bc431a0dcaee7fbedf1eba3d63beaabddf85f85a1fd356e28777669df62868a"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/cli/prompt_tune.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/cli/prompt_tune.py",
+      "bytes": 4019,
+      "sha256": "ee98d734fbf3780605bc5058ee25b122c1fdd04a35756b77b90206aef58ce626"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/cli/query.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/cli/query.py",
+      "bytes": 11910,
+      "sha256": "8c482a7b1e662baf60d72bd0baaefa39bbbfed4e04d6614e5411e30b9cb3ceac"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/config/__init__.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/config/__init__.py",
+      "bytes": 109,
+      "sha256": "75391c86fa1cf86df642abb35ac7725a48f5c2f47064c4e63b1de563b3d07187"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/config/defaults.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/config/defaults.py",
+      "bytes": 11727,
+      "sha256": "ac94e72ccac42a16f9808680a2eec1b8edbb4b9a52a2da15b9e9f342a86422d2"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/config/embeddings.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/config/embeddings.py",
+      "bytes": 552,
+      "sha256": "b102fedfb5640b81e24a35573b231ed2ee5f92b5ae880a7a5e49f15e2279411a"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/config/enums.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/config/enums.py",
+      "bytes": 2096,
+      "sha256": "2ded3f299e17eb9451707521bc1ade81999efd5744eaa6d41fc0a316af60fca0"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/config/errors.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/config/errors.py",
+      "bytes": 1390,
+      "sha256": "64a3b4a3a47834e9b6e5abba7a3830527f35149fbdfd09cc069a7813befbd64b"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/config/init_content.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/config/init_content.py",
+      "bytes": 5576,
+      "sha256": "8ed97fa160fa297644975b575cd51bdb9900930d5c643fcc1cc191a880838c3d"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/config/load_config.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/config/load_config.py",
+      "bytes": 1257,
+      "sha256": "5e621864d652ecf410ebb7cb1629ae8192e8c4c20bd7b1bba4ea44c658768686"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/config/models/__init__.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/config/models/__init__.py",
+      "bytes": 132,
+      "sha256": "781118e7285d405e11024f88d44daf6304b3ac4bf43e613f551478f6677abbda"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/config/models/basic_search_config.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/config/models/basic_search_config.py",
+      "bytes": 1174,
+      "sha256": "63e3c5e3be6478f1adcd8a2f82b849e9d25f3744fa8e5ee25ad7d30c8d7f01ea"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/config/models/cluster_graph_config.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/config/models/cluster_graph_config.py",
+      "bytes": 825,
+      "sha256": "4d30f2eeb4782e53a5c230607b745e757af9456903616650d5915351b723f553"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/config/models/community_reports_config.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/config/models/community_reports_config.py",
+      "bytes": 2435,
+      "sha256": "bc1734823059541e6a134819756fec55ead8fddcc496d0c8f0a9021f436cf7de"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/config/models/drift_search_config.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/config/models/drift_search_config.py",
+      "bytes": 4900,
+      "sha256": "d981e06aef3b17c11aba14b150379977e1730dfd5dd48cedcd7a9b98edac7f62"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/config/models/embed_text_config.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/config/models/embed_text_config.py",
+      "bytes": 1204,
+      "sha256": "a1b813fb961fd2f7d2c7e12db01a8ed3a27b5c64b8de8a6c377f0466f1147eae"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/config/models/extract_claims_config.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/config/models/extract_claims_config.py",
+      "bytes": 1970,
+      "sha256": "f7fe5619087490217bfb482bcbeca7f223cdb6883bf48d9f8c88704f2ce4bbaf"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/config/models/extract_graph_config.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/config/models/extract_graph_config.py",
+      "bytes": 1822,
+      "sha256": "7f28e4db78838eea5d7dbc2e470f103c732bc4d9ef5ecca7eaf7a4ce1844c361"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/config/models/extract_graph_nlp_config.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/config/models/extract_graph_nlp_config.py",
+      "bytes": 3320,
+      "sha256": "34fc032dfbb7b642f3ef8d86e44d40a80e6323be47d4fcb9e38857150c1ae4ef"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/config/models/global_search_config.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/config/models/global_search_config.py",
+      "bytes": 2903,
+      "sha256": "db26fe882b18f07a5cfabef9eebf6e259d710f88e832128b7aa25dd559fd8616"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/config/models/graph_rag_config.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/config/models/graph_rag_config.py",
+      "bytes": 13656,
+      "sha256": "cea4cd9bc1df8389729350018becad7588243b747e0ce75bd07c4af0ae50cd40"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/config/models/local_search_config.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/config/models/local_search_config.py",
+      "bytes": 1866,
+      "sha256": "898587ce86e93ac2f0f4ae090a38d61154d9e77d1682db7a291dd219e69db0c1"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/config/models/prune_graph_config.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/config/models/prune_graph_config.py",
+      "bytes": 1600,
+      "sha256": "6c28c14fcb817d27460d105561791983f71b6a63e35f67e258390c6b39ecb95c"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/config/models/reporting_config.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/config/models/reporting_config.py",
+      "bytes": 1225,
+      "sha256": "83fde22736ee8743c66c19af17a6ddafb5bb9cf11aa682f6c0ed11865d1d9e58"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/config/models/snapshots_config.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/config/models/snapshots_config.py",
+      "bytes": 916,
+      "sha256": "0fa6744bc57867d3a98853751676fceb8f7564a8518f61c29e4ecd060adc23d9"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/config/models/summarize_descriptions_config.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/config/models/summarize_descriptions_config.py",
+      "bytes": 1941,
+      "sha256": "40f3585288ad2c3b6c24b97b58e3f45e4df369561475af3840d422c56fe6fecd"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/data_model/__init__.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/data_model/__init__.py",
+      "bytes": 191,
+      "sha256": "1b7963d557c5f6f25a6b9ce1e05f6970cbd591b63b8893eb9863a1f5e11a5546"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/data_model/community_report.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/data_model/community_report.py",
+      "bytes": 2083,
+      "sha256": "984fe1425659d841778128606258ee243c375365469a5e64357525ab184c0792"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/data_model/community.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/data_model/community.py",
+      "bytes": 2566,
+      "sha256": "7827ee69dd9a2acb5186c2b478e20463d747d969b8e75ad0f1d5b4bca5e51764"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/data_model/covariate.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/data_model/covariate.py",
+      "bytes": 1579,
+      "sha256": "cb6ac0a28ee768625ffa63c8f143a83a7883e81a3ff6e107d261fd2f2a17eb62"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/data_model/data_reader.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/data_model/data_reader.py",
+      "bytes": 2701,
+      "sha256": "a09c8b46acf6442156480b071f850641d14f7a8e02b985b164b3fde1d102e5e8"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/data_model/dfs.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/data_model/dfs.py",
+      "bytes": 5345,
+      "sha256": "a510d328a7c398eee7795ea18a01e4ea27dd7363d5f24be25c62b2fb17d3f7da"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/data_model/document.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/data_model/document.py",
+      "bytes": 1403,
+      "sha256": "1f37bee3e96cac1368f02b688bc0ec0ff0d21fbbb85225e1ae9c6f252247f757"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/data_model/entity.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/data_model/entity.py",
+      "bytes": 2455,
+      "sha256": "88aecadbed3dd65affb272b64c6645aadb606d6afd507839c0774bbf22a1b4b0"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/data_model/identified.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/data_model/identified.py",
+      "bytes": 449,
+      "sha256": "5cb68c34f84718a540b3c0d869e683abcc34972f1aa8a8c57d99d9403babf545"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/data_model/named.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/data_model/named.py",
+      "bytes": 361,
+      "sha256": "58111e56b36969b629770ffbb6d0227b67a49690f073673905978a40516b1122"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/data_model/relationship.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/data_model/relationship.py",
+      "bytes": 2226,
+      "sha256": "38ab0d54c605fca20a9be7c3aab3d7e4a4c96b32b560ca0db53cb2a4fb908bf5"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/data_model/row_transformers.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/data_model/row_transformers.py",
+      "bytes": 7859,
+      "sha256": "19d1bdeb610abd5928290b412ad84fbf24c0936235837083265dff9539f6f50c"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/data_model/schemas.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/data_model/schemas.py",
+      "bytes": 2963,
+      "sha256": "ab23854fbb43acfcff6ffdc2f32703d3fbf620e82723d8e742bac97cb3c37293"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/data_model/text_unit.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/data_model/text_unit.py",
+      "bytes": 2046,
+      "sha256": "27650462646b686a0cf2f2e51edecfec378db48fe8a91a33e3872d05a76715ba"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/data_model/types.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/data_model/types.py",
+      "bytes": 214,
+      "sha256": "9f7900a32c282941cbeb6fc50d294c122a0eb70c71ed6a3d379dfeec5baf7f14"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/graphs/__init__.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/graphs/__init__.py",
+      "bytes": 156,
+      "sha256": "ef71e5f3b4841f958a24f137b2787dc1469f4f310469fd50f27205db08fa2248"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/graphs/compute_degree.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/graphs/compute_degree.py",
+      "bytes": 1427,
+      "sha256": "26cf5bcf9fbd196fccebfb575631daff8bda1b3a3224b460f753f49396e79471"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/graphs/connected_components.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/graphs/connected_components.py",
+      "bytes": 2633,
+      "sha256": "ed016027d53f13f78dd5640c72fd76afe6ba9b17da2131d962e303752e3d8aa3"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/graphs/edge_weights.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/graphs/edge_weights.py",
+      "bytes": 3199,
+      "sha256": "9e4fa1c5f365ea93294736099cb2c3697627d1fdd3c5ed8b58846f1128416f70"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/graphs/hierarchical_leiden.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/graphs/hierarchical_leiden.py",
+      "bytes": 1525,
+      "sha256": "17f579b6062fac321a6c30fcbd0b10ff9fdc9a13ab3dea763d2fc2faf61fea62"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/graphs/modularity.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/graphs/modularity.py",
+      "bytes": 9874,
+      "sha256": "fb755464f703b9b7cdfb10c4722b7d4c44f32caee1dde836cd4f4a09fa525636"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/graphs/stable_lcc.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/graphs/stable_lcc.py",
+      "bytes": 2528,
+      "sha256": "8b775764fda510d65b4d7af7597267cd5846d0d74f36d052f1b8c66300273d32"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/index/__init__.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/index/__init__.py",
+      "bytes": 118,
+      "sha256": "c12733111da06d1105772d976dcdbd0d55b8ead066bd3bcf264d041931f9f1db"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/index/operations/__init__.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/index/operations/__init__.py",
+      "bytes": 116,
+      "sha256": "b95a0917290b1bae5e3e34340b8ef3e6320b45521afab924f120899e428d221a"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/index/operations/build_noun_graph/__init__.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/index/operations/build_noun_graph/__init__.py",
+      "bytes": 129,
+      "sha256": "a4385aaa5acea31d1361aa94cf70a613e2714eb86e0e257c20ac0b8ba6e7db2a"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/index/operations/build_noun_graph/build_noun_graph.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/index/operations/build_noun_graph/build_noun_graph.py",
+      "bytes": 4165,
+      "sha256": "ef5ad6895d70651159f578054bc7427dd28b6262c5b3e44f3002fd187972f80b"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/index/operations/build_noun_graph/np_extractors/__init__.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/index/operations/build_noun_graph/np_extractors/__init__.py",
+      "bytes": 112,
+      "sha256": "a9a0b74106281bd1638fee56a542575636810a892dfdd7599fba08e64132803e"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/index/operations/build_noun_graph/np_extractors/base.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/index/operations/build_noun_graph/np_extractors/base.py",
+      "bytes": 1730,
+      "sha256": "7dec30cd37f14871e5602187e5951faa5f046714176558e289c93d23e1f03ae9"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/index/operations/build_noun_graph/np_extractors/cfg_extractor.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/index/operations/build_noun_graph/np_extractors/cfg_extractor.py",
+      "bytes": 7253,
+      "sha256": "bcea1907bd68f698f9ca0c5fa1e49fba161e3e6db663c68b7f466c576bddfb37"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/index/operations/build_noun_graph/np_extractors/factory.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/index/operations/build_noun_graph/np_extractors/factory.py",
+      "bytes": 3488,
+      "sha256": "71306b48580e3f14abb00ddac6a2396aa9d0ac53d8cf245a6bee3b7c5823407d"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/index/operations/build_noun_graph/np_extractors/np_validator.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/index/operations/build_noun_graph/np_extractors/np_validator.py",
+      "bytes": 853,
+      "sha256": "079be645c3370ef2ca02f9a5da8f987d7e6e3d530a106dbe773bad4d959b3861"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/index/operations/build_noun_graph/np_extractors/regex_extractor.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/index/operations/build_noun_graph/np_extractors/regex_extractor.py",
+      "bytes": 4540,
+      "sha256": "93d0024a53138c453aae3e9e4223ad4bd3f57afcdb6b575e714697bc7c384722"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/index/operations/build_noun_graph/np_extractors/resource_loader.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/index/operations/build_noun_graph/np_extractors/resource_loader.py",
+      "bytes": 969,
+      "sha256": "8c0fd27a593fee7a03728f21f035e416460c4e52915fd3f9bdb0c043f6f6fe1e"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/index/operations/build_noun_graph/np_extractors/stop_words.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/index/operations/build_noun_graph/np_extractors/stop_words.py",
+      "bytes": 349,
+      "sha256": "a16e1ef44614dd1a48380ac8820ad3d55f5bcfd64de242c3ea64424f4d8d24f9"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/index/operations/build_noun_graph/np_extractors/syntactic_parsing_extractor.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/index/operations/build_noun_graph/np_extractors/syntactic_parsing_extractor.py",
+      "bytes": 6245,
+      "sha256": "8800a1e4c24d0a034ae457048f5f07b339acba0e785cab16614ff9252483c746"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/index/operations/cluster_graph.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/index/operations/cluster_graph.py",
+      "bytes": 3146,
+      "sha256": "93c51b3f562c5176170d226ae26234360bc80feee799e06feccea923e22e10be"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/index/operations/compute_edge_combined_degree.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/index/operations/compute_edge_combined_degree.py",
+      "bytes": 1325,
+      "sha256": "1b2f13107c754cabff20ac6155458c2fa69882c7c6d617d9433a52cfab82854b"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/index/operations/embed_text/__init__.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/index/operations/embed_text/__init__.py",
+      "bytes": 129,
+      "sha256": "54e6eb87b87a8bc47ac6b9f58dc58da41662a2efcbe409ea86daf300e5cf06e1"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/index/operations/embed_text/embed_text.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/index/operations/embed_text/embed_text.py",
+      "bytes": 4151,
+      "sha256": "1d2b78635c0cf6fcb5c9d8d01ed9b61c53b717c23b0bd80dc28bd1ed7cedc890"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/index/operations/embed_text/run_embed_text.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/index/operations/embed_text/run_embed_text.py",
+      "bytes": 5163,
+      "sha256": "66fc52e139048b3566b259f4c945f96e0cb9d2d8fdefd0b5cf1c115e990ab0d7"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/index/operations/extract_covariates/__init__.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/index/operations/extract_covariates/__init__.py",
+      "bytes": 138,
+      "sha256": "8ffadf1307438112b624a46dfaae250e6f314e49c624b954e3e155e38e79b499"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/index/operations/extract_covariates/claim_extractor.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/index/operations/extract_covariates/claim_extractor.py",
+      "bytes": 6872,
+      "sha256": "5b05bdd60d8fc81de7639d103cee5494006149ce4a31393fd4ddd352c3a9ab79"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/index/operations/extract_covariates/extract_covariates.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/index/operations/extract_covariates/extract_covariates.py",
+      "bytes": 3667,
+      "sha256": "1a8245aad7b20ef4e3c69f7b835fff12221887af0c1a09e25d221e3a37a96106"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/index/operations/extract_covariates/typing.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/index/operations/extract_covariates/typing.py",
+      "bytes": 1205,
+      "sha256": "ddcfc88621a97b007db4a383134a86f9e05d816b4765e6fa99d86e418920db08"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/index/operations/extract_graph/__init__.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/index/operations/extract_graph/__init__.py",
+      "bytes": 138,
+      "sha256": "8a4a1edfb205f97c670d1f499958640738bf5ace1c10481cc1120fb146f67dce"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/index/operations/extract_graph/extract_graph.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/index/operations/extract_graph/extract_graph.py",
+      "bytes": 3617,
+      "sha256": "5ccfb0fe91171623b7973d498dd4c744037d8eca79c1d0b276eafd04bc09e6ee"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/index/operations/extract_graph/graph_extractor.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/index/operations/extract_graph/graph_extractor.py",
+      "bytes": 6609,
+      "sha256": "300825a90fdf53c43d017d9a5f0146cb56e0265f9594424bb4b4f7fd251242df"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/index/operations/extract_graph/utils.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/index/operations/extract_graph/utils.py",
+      "bytes": 1621,
+      "sha256": "37563ca9d12d2663012c791435489820120ee29aeb6f449e0c3976207adbcb48"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/index/operations/finalize_community_reports.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/index/operations/finalize_community_reports.py",
+      "bytes": 1071,
+      "sha256": "a1f39523a26ccd130a50111d23d1bb4c40604da14ba0a1d2139db9b1c6f0639e"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/index/operations/finalize_entities.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/index/operations/finalize_entities.py",
+      "bytes": 1704,
+      "sha256": "5f4a800ff5e4a728128ff0f68f415c99ac9b474a03718f44c1f93ed5f90e32c6"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/index/operations/finalize_relationships.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/index/operations/finalize_relationships.py",
+      "bytes": 1755,
+      "sha256": "3a9378da997c9077933052aeebfbffaed33a245947a59c4fb42ead1782030c68"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/index/operations/prune_graph.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/index/operations/prune_graph.py",
+      "bytes": 4567,
+      "sha256": "c341f6225b402684efec00c1f7b50f86f8baa2423b37a7dc79abda0e9f8c53dd"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/index/operations/snapshot_graphml.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/index/operations/snapshot_graphml.py",
+      "bytes": 562,
+      "sha256": "33f0443500e76a393c3b7bbd008412445c241778db81ec5998970b8b68b2b4b9"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/index/operations/summarize_communities/__init__.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/index/operations/summarize_communities/__init__.py",
+      "bytes": 117,
+      "sha256": "1fc2d648d8b8c276527993a100b5e0d52356a12312a012f692db206c03e4bfaf"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/index/operations/summarize_communities/build_mixed_context.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/index/operations/summarize_communities/build_mixed_context.py",
+      "bytes": 2963,
+      "sha256": "4e5f9e3917974dad42586e9511c1da12bcbea59f4b23f0c6757abc0524f7717d"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/index/operations/summarize_communities/community_reports_extractor.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/index/operations/summarize_communities/community_reports_extractor.py",
+      "bytes": 3315,
+      "sha256": "7382df03b42eae7b43572af5682a7d8f94516615b34c8a6ea849a7cfdc62b279"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/index/operations/summarize_communities/explode_communities.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/index/operations/summarize_communities/explode_communities.py",
+      "bytes": 665,
+      "sha256": "5d69412266d02c0dad4c6fc85dcde4f0a181cebb858bc348c6b8f379a76d9ce9"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/index/operations/summarize_communities/graph_context/__init__.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/index/operations/summarize_communities/graph_context/__init__.py",
+      "bytes": 137,
+      "sha256": "32c76da324fc34052d300f760960ad8ca25fb629dea79606553e19c4af5762cb"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/index/operations/summarize_communities/graph_context/context_builder.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/index/operations/summarize_communities/graph_context/context_builder.py",
+      "bytes": 12088,
+      "sha256": "d3c2f063b680a02fe91424092667fcdfa35ec2c1cc1bc0d83bb8d95a5332cdba"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/index/operations/summarize_communities/graph_context/sort_context.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/index/operations/summarize_communities/graph_context/sort_context.py",
+      "bytes": 5823,
+      "sha256": "599b8b5b0c56b3be71a4bb8eabd945fb15e81bd4c730b3299a0e5eaf45d2d9a1"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/index/operations/summarize_communities/summarize_communities.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/index/operations/summarize_communities/summarize_communities.py",
+      "bytes": 5112,
+      "sha256": "4560b7477c04c1131f365183cb82c84dfc667be7fd50756ca838192061936699"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/index/operations/summarize_communities/text_unit_context/__init__.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/index/operations/summarize_communities/text_unit_context/__init__.py",
+      "bytes": 141,
+      "sha256": "e558d67bcdea7c3ce40193d1d09b2ff6b2e95385c5ca4866a7f4642e9f666b8a"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/index/operations/summarize_communities/text_unit_context/context_builder.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/index/operations/summarize_communities/text_unit_context/context_builder.py",
+      "bytes": 8604,
+      "sha256": "b26d44d6281cce2cf4b938714206a281f068c4759d5ebd614c4e014bd921998d"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/index/operations/summarize_communities/text_unit_context/prep_text_units.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/index/operations/summarize_communities/text_unit_context/prep_text_units.py",
+      "bytes": 1415,
+      "sha256": "571e5d474adc08ecb31388796eb8e5e07d66089a980e331e32411b89fc5ee531"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/index/operations/summarize_communities/text_unit_context/sort_context.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/index/operations/summarize_communities/text_unit_context/sort_context.py",
+      "bytes": 2804,
+      "sha256": "a28fbf0e20ccd9b005e72e91823e471e77b2adb2cc485025492d4785103a0e89"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/index/operations/summarize_communities/typing.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/index/operations/summarize_communities/typing.py",
+      "bytes": 964,
+      "sha256": "af60ffc368dabdfa837b81812cd8838da910ecefb85439ec9a2e80babf1d93d3"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/index/operations/summarize_communities/utils.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/index/operations/summarize_communities/utils.py",
+      "bytes": 499,
+      "sha256": "71d64e4ccc6e9cd594b2d4ea35ed034c701e84a86f9715e3ffad6c6f88d1da9c"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/index/operations/summarize_descriptions/__init__.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/index/operations/summarize_descriptions/__init__.py",
+      "bytes": 128,
+      "sha256": "0c3c40821c525daefcc85ef97c4e4089ac270a5cb0592c60745331211c1faa60"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/index/operations/summarize_descriptions/description_summary_extractor.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/index/operations/summarize_descriptions/description_summary_extractor.py",
+      "bytes": 4551,
+      "sha256": "9fc751092a9a920bb0a18d320f87d96e9d340e3513b4a58171f9a56206ecb658"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/index/operations/summarize_descriptions/summarize_descriptions.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/index/operations/summarize_descriptions/summarize_descriptions.py",
+      "bytes": 4268,
+      "sha256": "0760cff39b6b8d552ae69ae291c567273dc7b7466decd85a60effd3cd29e262e"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/index/operations/summarize_descriptions/typing.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/index/operations/summarize_descriptions/typing.py",
+      "bytes": 480,
+      "sha256": "7be2c7062d4d3235c8d28d6bc145093c8100c15583641a3099ffe6145985ab72"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/index/run/__init__.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/index/run/__init__.py",
+      "bytes": 109,
+      "sha256": "609d0cecc485913c30483e50f55e5479443deb567bc57b80c19880294db52b80"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/index/run/profiling.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/index/run/profiling.py",
+      "bytes": 1915,
+      "sha256": "53ef67fee517d7bd4055a9a197ffa55ea664d6c8ba22db8114480ab7d0cf2b32"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/index/run/run_pipeline.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/index/run/run_pipeline.py",
+      "bytes": 7108,
+      "sha256": "d9a75a91c36688c4fffff0794442ada02d6e1d3a5058716ba3a0b6c6716c6676"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/index/run/utils.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/index/run/utils.py",
+      "bytes": 3306,
+      "sha256": "8f39c007bc2d6942d55f75ad3b5debd5c9d286590d1a11ac7375b1580a2064de"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/index/text_splitting/__init__.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/index/text_splitting/__init__.py",
+      "bytes": 133,
+      "sha256": "33b01a9e8c83736f1a8b77e62cc68dc6b3a931708a26a0a393480816b56b296f"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/index/text_splitting/text_splitting.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/index/text_splitting/text_splitting.py",
+      "bytes": 3269,
+      "sha256": "105a4b485352e13ebb5855341d60ec7344a479109c0d19990351778fa78d7e39"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/index/typing/__init__.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/index/typing/__init__.py",
+      "bytes": 111,
+      "sha256": "da1b9cfbf47214f121c112569a98b052f92a5a96a504914051295d24eadb8e7b"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/index/typing/context.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/index/typing/context.py",
+      "bytes": 1314,
+      "sha256": "3aadf5d0f0929ebbd2a1c56795c302f1f969b75ae2c32dc36113f57a9f9486a4"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/index/typing/error_handler.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/index/typing/error_handler.py",
+      "bytes": 232,
+      "sha256": "958b8b1c0f123ed92c41a3f4ce4b4b36ae84e93fe58437dbeb9174674670a434"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/index/typing/pipeline_run_result.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/index/typing/pipeline_run_result.py",
+      "bytes": 728,
+      "sha256": "b91ea74639bfe21d9cdc89d753765ab913cfbd8a9dbc2a031cb4e51ffd6abc31"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/index/typing/pipeline.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/index/typing/pipeline.py",
+      "bytes": 824,
+      "sha256": "aad123e6cec929d2ac5e8f81f0dfce1e08b4189de26729b8881cea9062f6da6c"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/index/typing/state.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/index/typing/state.py",
+      "bytes": 162,
+      "sha256": "190491a370bf129c759507d5520de9d07bd901a2806a0a5618fb284a99f7f1c9"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/index/typing/stats.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/index/typing/stats.py",
+      "bytes": 1143,
+      "sha256": "6766b071efeba44ea424a145542c0aa02b1c8a794e39e21fe24fc6ddd8e45f79"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/index/typing/workflow.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/index/typing/workflow.py",
+      "bytes": 990,
+      "sha256": "2826d1c22d6d9142972c6623fc5a3e19612f758495f84ac135336e7b643a32d8"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/index/update/__init__.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/index/update/__init__.py",
+      "bytes": 129,
+      "sha256": "485589aeb19c52f4bfc46e85bd413822377aee3582815a85d730ccced1289b81"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/index/update/communities.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/index/update/communities.py",
+      "bytes": 4887,
+      "sha256": "e900c876a4b58a69e56066fb30e71a9f56399eff0cd00f296e5c3c91acc85e49"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/index/update/entities.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/index/update/entities.py",
+      "bytes": 2367,
+      "sha256": "ae2e9fbe015b255d82cdf553452987bc3f0eee20cb5cb276d1f1ab131b8eda36"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/index/update/incremental_index.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/index/update/incremental_index.py",
+      "bytes": 2335,
+      "sha256": "4df22424f15f856ca66fb3a3df56ed801a857774dc12d7a7ca1106b31967a97c"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/index/update/relationships.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/index/update/relationships.py",
+      "bytes": 2718,
+      "sha256": "fe328c885b11020f77f889fec911fa6eece264d505cc19a211fa5624a5de6143"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/index/utils/__init__.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/index/utils/__init__.py",
+      "bytes": 110,
+      "sha256": "5d4fc8cfca3972aeb5127dd5a4fdbc85f152c2e6b6d4d9a25fb721fd1291a6aa"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/index/utils/dataframes.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/index/utils/dataframes.py",
+      "bytes": 1661,
+      "sha256": "9067945be2a97468b943a604cbf5e249fa29357face793d9bad05e6e4d1f175a"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/index/utils/derive_from_rows.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/index/utils/derive_from_rows.py",
+      "bytes": 5280,
+      "sha256": "294916e37d553eddbafa3d8a3fda4f29edfdbaea6ac98aebef0ef506b35db4f4"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/index/utils/dicts.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/index/utils/dicts.py",
+      "bytes": 708,
+      "sha256": "35e980e7ede5d927e5a1feb9ab8b41de15855b2cffac2893f62cfd453d565250"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/index/utils/hashing.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/index/utils/hashing.py",
+      "bytes": 442,
+      "sha256": "693c1f9a688f98abd736737762ffb61577081f28c29774358dbbf0ec94519561"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/index/utils/is_null.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/index/utils/is_null.py",
+      "bytes": 408,
+      "sha256": "49a15944faa5f38903e68576373b6cbb2aa9f26f94244bb9bbc8b33c257b552d"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/index/utils/string.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/index/utils/string.py",
+      "bytes": 601,
+      "sha256": "aadd91d186fc3c72181d9ea8e152d37dc17865c5dbc3ac5635f175868ebeeeb1"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/index/utils/uuid.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/index/utils/uuid.py",
+      "bytes": 346,
+      "sha256": "c34aeaae80194b80359c248fb6aa9c305cc26c4719e9c876e553f68a94e77756"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/index/validate_config.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/index/validate_config.py",
+      "bytes": 2649,
+      "sha256": "4b2db34dff1e559ea5e904f02c943cc5f48336926b57dd144bb6d1d12f413e54"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/index/workflows/__init__.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/index/workflows/__init__.py",
+      "bytes": 3352,
+      "sha256": "2aa1a1e0d91265d9d92db05234d83a9f9cbb5c23f107676175d0de67535b0c03"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/index/workflows/create_base_text_units.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/index/workflows/create_base_text_units.py",
+      "bytes": 5223,
+      "sha256": "e5d5e08a5f0cce617004c72b3c222325d802144a8de8e1e7a8a1d6ee4f426318"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/index/workflows/create_communities.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/index/workflows/create_communities.py",
+      "bytes": 7242,
+      "sha256": "4c7d0a4f821c51323229113cabe094ee1a4a0177a7e3459ed7b5a27f29f8a578"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/index/workflows/create_community_reports_text.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/index/workflows/create_community_reports_text.py",
+      "bytes": 3828,
+      "sha256": "ef1a6d74bc7e2849b9022ed7d86ccf2c97153377b9f5730793857626e7e4ac06"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/index/workflows/create_community_reports.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/index/workflows/create_community_reports.py",
+      "bytes": 5990,
+      "sha256": "ae1cd8ccd4fff439ca5480439b5f09ea9330680f39abbea53e91a288992cc724"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/index/workflows/create_final_documents.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/index/workflows/create_final_documents.py",
+      "bytes": 2259,
+      "sha256": "eb34f636f166cf3bcf1483025313fdb6595e91b8c89279b36a8f9486fac8e13b"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/index/workflows/create_final_text_units.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/index/workflows/create_final_text_units.py",
+      "bytes": 4697,
+      "sha256": "4973551ddc8741099daad74e4ff05797129f7b3f13026268266a1900f4f70797"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/index/workflows/extract_covariates.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/index/workflows/extract_covariates.py",
+      "bytes": 3792,
+      "sha256": "78e04c04175c1d01a0e232c189e33db7ef2d41f09cf48aec2d0efd0156ea3384"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/index/workflows/extract_graph_nlp.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/index/workflows/extract_graph_nlp.py",
+      "bytes": 4368,
+      "sha256": "d73218883c64276779c56339fe1654c0ca0fd136d9ddf17ffbcf040363db8d4b"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/index/workflows/extract_graph.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/index/workflows/extract_graph.py",
+      "bytes": 6846,
+      "sha256": "69cbb245fec857c4939b44a42e9de7d0cbb4ad243d07b8666950af97f41afdee"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/index/workflows/factory.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/index/workflows/factory.py",
+      "bytes": 3014,
+      "sha256": "61a8f11d7567f04b65753c75cc5f8d8543f6a8dd37297d63cfc248a9119bb4da"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/index/workflows/finalize_graph.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/index/workflows/finalize_graph.py",
+      "bytes": 3849,
+      "sha256": "887e9350afb75a85bea98671e1f5498e8357768c8f924fadf90dd59101e3dafb"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/index/workflows/generate_text_embeddings.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/index/workflows/generate_text_embeddings.py",
+      "bytes": 5307,
+      "sha256": "f97877b3a2b3ff8113b80c4406fc2062494915d2e5147877ba743560d152ad40"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/index/workflows/load_input_documents.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/index/workflows/load_input_documents.py",
+      "bytes": 1892,
+      "sha256": "c61f5205d9beda632e406d958a96faf8ca4872bff9b3df8ec3a34a4552e4a0f7"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/index/workflows/load_update_documents.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/index/workflows/load_update_documents.py",
+      "bytes": 2355,
+      "sha256": "00990f71f661472a685fce7318424c949b962695aa3f5c3ffd68c0b61fd0ca7e"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/index/workflows/prune_graph.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/index/workflows/prune_graph.py",
+      "bytes": 2659,
+      "sha256": "498ed0726da465c8f8f334fe6b63bb44ec4f680675bc83e7b6761edd83f69741"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/index/workflows/update_clean_state.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/index/workflows/update_clean_state.py",
+      "bytes": 935,
+      "sha256": "3190d8d70d2376f88f564c1435972a3cd086e113483e17b364cd88213e3c6118"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/index/workflows/update_communities.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/index/workflows/update_communities.py",
+      "bytes": 1982,
+      "sha256": "481233b634ca586d0394ef1eb156388d5ab90b728699cb98d321baca1922087f"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/index/workflows/update_community_reports.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/index/workflows/update_community_reports.py",
+      "bytes": 2336,
+      "sha256": "e22a356904fabe61d0c68f737e2811ddd10b40163fda166a242a97bfe8d5aefc"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/index/workflows/update_covariates.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/index/workflows/update_covariates.py",
+      "bytes": 2700,
+      "sha256": "1ec0494bea89a6b78a0847c22ad2b5c16d36caf3c5a4dfe74bb1629f9c0cda2e"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/index/workflows/update_entities_relationships.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/index/workflows/update_entities_relationships.py",
+      "bytes": 4492,
+      "sha256": "5f4feb6972c44344fea39ac8a03620002b849d99791b9e7ead366ffa3c7b4bfe"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/index/workflows/update_final_documents.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/index/workflows/update_final_documents.py",
+      "bytes": 1271,
+      "sha256": "50f90481096c3cb6b2714ee47433823cbe6742b8b7ccf98a5895c33f02c1d843"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/index/workflows/update_text_embeddings.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/index/workflows/update_text_embeddings.py",
+      "bytes": 1630,
+      "sha256": "9d1ef0118fb9fd20b8b646f7db2dddc120b4dd546d8b219414b6433a1a0ff729"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/index/workflows/update_text_units.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/index/workflows/update_text_units.py",
+      "bytes": 3165,
+      "sha256": "d9b695f8889bbf77d57f4e2b37c86e501fff95cbd550284dca861a656608e5e2"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/logger/__init__.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/logger/__init__.py",
+      "bytes": 122,
+      "sha256": "80e7507ee906f0238eca0972f76b44d64a54491d5a7167a9b595df8a04a9ccf1"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/logger/blob_workflow_logger.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/logger/blob_workflow_logger.py",
+      "bytes": 4348,
+      "sha256": "839e73c2d7eb373439f435bef4e9d64d80d87f58bd8594c899f131b3c982c3b0"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/logger/factory.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/logger/factory.py",
+      "bytes": 2063,
+      "sha256": "9ca71a550de90dcaae2275aec825aaf48eca698421f194f70ecdad564935e9e7"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/logger/progress.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/logger/progress.py",
+      "bytes": 2712,
+      "sha256": "8f47dab6bfffe8e2154520a29627acb1087252bcc05d96d5a1ef2286f19511fc"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/logger/standard_logging.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/logger/standard_logging.py",
+      "bytes": 2968,
+      "sha256": "485508e09f3f009199f61b2fb18a24482cc94e2869af4aa6c33c5b6f25e9e710"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/prompt_tune/__init__.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/prompt_tune/__init__.py",
+      "bytes": 116,
+      "sha256": "936cea71160dbad59ca200492526ef4f15cc73b806c441cf95830274640b83e2"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/prompt_tune/defaults.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/prompt_tune/defaults.py",
+      "bytes": 604,
+      "sha256": "a42e33b32b67d5dd01dd76d89f0459b360851da4383240e96e00fc241e003331"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/prompt_tune/generator/__init__.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/prompt_tune/generator/__init__.py",
+      "bytes": 110,
+      "sha256": "4a661c9fc271faeaff2eb50e8a89a0f9d58a5e7e6fa89b3f4193dfdc0cee413b"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/prompt_tune/generator/community_report_rating.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/prompt_tune/generator/community_report_rating.py",
+      "bytes": 1319,
+      "sha256": "96fd8c4fb529613a5eb9ebbf5165641545978e40154fee8a4aa5d2896bed6a22"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/prompt_tune/generator/community_report_summarization.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/prompt_tune/generator/community_report_summarization.py",
+      "bytes": 1655,
+      "sha256": "79480ba6d4803fdbede7a248a0ef251bacd367434b2a50e7e0207f8c798a4fa5"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/prompt_tune/generator/community_reporter_role.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/prompt_tune/generator/community_reporter_role.py",
+      "bytes": 1322,
+      "sha256": "742276bfa6b8dcaad1502f40ba455b55dab778e2ef315084260b60826ec531fc"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/prompt_tune/generator/domain.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/prompt_tune/generator/domain.py",
+      "bytes": 1029,
+      "sha256": "c420a232e14dbff5bc0d9c3b0f65f1425cd7a26a523efe590e0e50198879873d"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/prompt_tune/generator/entity_relationship.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/prompt_tune/generator/entity_relationship.py",
+      "bytes": 2316,
+      "sha256": "ab18ba3e1b58e2e7d165c26d9ecc1a7489a23d23df8f83ce8237a1ae6fd17822"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/prompt_tune/generator/entity_summarization_prompt.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/prompt_tune/generator/entity_summarization_prompt.py",
+      "bytes": 1176,
+      "sha256": "5bc473f09a344e5613956964a397457e32e0225506fb3e32f41651fe24a6cec5"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/prompt_tune/generator/entity_types.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/prompt_tune/generator/entity_types.py",
+      "bytes": 2100,
+      "sha256": "8f8b0bec57f8671107a8295d42365dab2584a6623c362e9d6f69e8e526866869"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/prompt_tune/generator/extract_graph_prompt.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/prompt_tune/generator/extract_graph_prompt.py",
+      "bytes": 3547,
+      "sha256": "c06bf929438e13dea011182346eaf31ef5313350228fc4d5a680608a7bae0aae"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/prompt_tune/generator/language.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/prompt_tune/generator/language.py",
+      "bytes": 1015,
+      "sha256": "a14e1e05849bf558d2f319a73d5fefa3cb210bd97b1a697abcc3cce610bdec28"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/prompt_tune/generator/persona.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/prompt_tune/generator/persona.py",
+      "bytes": 1115,
+      "sha256": "3cfc213ae1f9440cfdbfce0970cbacbe7406723bbea53f93681b608ee405dd4c"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/prompt_tune/loader/__init__.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/prompt_tune/loader/__init__.py",
+      "bytes": 127,
+      "sha256": "2a53b08cdb926cdd6de5e898663b29dca50c655746cc00e561e4243bd46b66a7"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/prompt_tune/loader/input.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/prompt_tune/loader/input.py",
+      "bytes": 3758,
+      "sha256": "9ce93c2978c30349fc1d396ac99a6d3b3f32e32f5b5a6b5471ad55f4c1c88d2e"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/prompt_tune/prompt/__init__.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/prompt_tune/prompt/__init__.py",
+      "bytes": 158,
+      "sha256": "ca070eb16bfaa680ed3dd43d1679684416c926ca5612764a3e5f454c39443301"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/prompt_tune/prompt/community_report_rating.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/prompt_tune/prompt/community_report_rating.py",
+      "bytes": 6473,
+      "sha256": "52505a6f83f75ded7465844013d674d079fc05ea3d0cdc6d9aa064c192f185e7"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/prompt_tune/prompt/community_reporter_role.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/prompt_tune/prompt/community_reporter_role.py",
+      "bytes": 1001,
+      "sha256": "0a6c9ab2bd52a8887c25717f61de8bbb989f4248e16ac1cf636ebc3377203935"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/prompt_tune/prompt/domain.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/prompt_tune/prompt/domain.py",
+      "bytes": 492,
+      "sha256": "0b43d92d1544633ae77ea00204452a7d58574bf52bfe5c96e4425266815f6d86"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/prompt_tune/prompt/entity_relationship.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/prompt_tune/prompt/entity_relationship.py",
+      "bytes": 20938,
+      "sha256": "8657dd25a2e7322fa5aa6a567b05b8ceb9bdea72e57dce1e9573f9fa10fe0dbc"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/prompt_tune/prompt/entity_types.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/prompt_tune/prompt/entity_types.py",
+      "bytes": 5378,
+      "sha256": "463b6a9dd9af7318c95e39f91fa498b6ff955b6f49209f9cb51d8c74905c9027"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/prompt_tune/prompt/language.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/prompt_tune/prompt/language.py",
+      "bytes": 501,
+      "sha256": "8d86ae143967caa9f228f3d7fd733edd1429253defefe7df45a3ed9efe5cbb94"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/prompt_tune/prompt/persona.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/prompt_tune/prompt/persona.py",
+      "bytes": 618,
+      "sha256": "de0947497bd9c3ba986c8a013372516164da732d067e17109f986643feaec228"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/prompt_tune/template/__init__.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/prompt_tune/template/__init__.py",
+      "bytes": 185,
+      "sha256": "ec6fa665aaac7217fa3d3a5da7fd502d3759be2db196982cfd8527851f2283d7"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/prompt_tune/template/community_report_summarization.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/prompt_tune/template/community_report_summarization.py",
+      "bytes": 6230,
+      "sha256": "aeb13a2fe8a7e00bdc39f74c5b563b40f0b62bc2cffdb358a35e1cb4599db56e"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/prompt_tune/template/entity_summarization.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/prompt_tune/template/entity_summarization.py",
+      "bytes": 1070,
+      "sha256": "5c1d22a28120f66edaae7c5897cdae7b2acd11f798b2ef879ec342c7bf7125d2"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/prompt_tune/template/extract_graph.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/prompt_tune/template/extract_graph.py",
+      "bytes": 6082,
+      "sha256": "9749f2fd6d87263a0777ecb10877ba710ae73113d3f9c56babe36ecf96a1f82d"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/prompt_tune/types.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/prompt_tune/types.py",
+      "bytes": 407,
+      "sha256": "68696b22cdab05b39e68a6f85e294a6e4b417effdf9237cde48f1dbb6413103c"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/prompts/__init__.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/prompts/__init__.py",
+      "bytes": 121,
+      "sha256": "d3b468d71b2594d01803d6dee09abc01f637d907e3eb5b8d4a6e316a0c67f768"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/prompts/index/__init__.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/prompts/index/__init__.py",
+      "bytes": 121,
+      "sha256": "ce01a2c53722868ab4c8e0bbd5ed4dabf98f4fcf8103d960f703097965cbf85b"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/prompts/index/community_report_text_units.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/prompts/index/community_report_text_units.py",
+      "bytes": 7971,
+      "sha256": "85ec8744556e8e2e9b50766e2c563ec6431ca2897b0d2e40154ddaf64b634ec0"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/prompts/index/community_report.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/prompts/index/community_report.py",
+      "bytes": 9011,
+      "sha256": "55f49959a839291e5bf57af7edc9461b404bd73a163a9eb2ac68ce009fced2c0"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/prompts/index/extract_claims.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/prompts/index/extract_claims.py",
+      "bytes": 5077,
+      "sha256": "aef8b48311471c7a8fdcc0ce18790b499d4586df1c52feeeea8f3d0ddba553fa"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/prompts/index/extract_graph.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/prompts/index/extract_graph.py",
+      "bytes": 7082,
+      "sha256": "8d663fee15fcd9d55e955cb3d4ac5e4641b475c35c49313919f349085e60d2a7"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/prompts/index/summarize_descriptions.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/prompts/index/summarize_descriptions.py",
+      "bytes": 882,
+      "sha256": "8e88cd156ad9d3d57c6ae80cae753a260187a41a076de89de2cdf9333179f457"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/prompts/query/__init__.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/prompts/query/__init__.py",
+      "bytes": 118,
+      "sha256": "a707652bd4c80760a352b1e9b04b611abccc5515bd157d2c338ae7077c49bddf"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/prompts/query/basic_search_system_prompt.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/prompts/query/basic_search_system_prompt.py",
+      "bytes": 2893,
+      "sha256": "3e59218cb41dfebce64381e58acf7e8fb2f2a6aeb5b5e20d57441872a1c3a0f3"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/prompts/query/drift_search_system_prompt.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/prompts/query/drift_search_system_prompt.py",
+      "bytes": 8170,
+      "sha256": "8b602ddc0c1ba0dd9bd013d5f4dcaa308d2c5adac3347197ac523d54ca88b902"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/prompts/query/global_search_knowledge_system_prompt.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/prompts/query/global_search_knowledge_system_prompt.py",
+      "bytes": 403,
+      "sha256": "24ba05c44261d6c7536584b424f2ee8d0a79c6cc7a0594135d849172142601cc"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/prompts/query/global_search_map_system_prompt.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/prompts/query/global_search_map_system_prompt.py",
+      "bytes": 4116,
+      "sha256": "7987424c6f999858aca1baf90ad3fc23ab9d5b8bbc87da7e50e224c872d1707a"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/prompts/query/global_search_reduce_system_prompt.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/prompts/query/global_search_reduce_system_prompt.py",
+      "bytes": 3956,
+      "sha256": "f53e99db28d619e1b000847035f6e139a431f507d375d2bc3a2864b38613c7f3"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/prompts/query/local_search_system_prompt.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/prompts/query/local_search_system_prompt.py",
+      "bytes": 2701,
+      "sha256": "68eadf9641416d9ad2b358a62447d4a02fcca83702f4fad967f44a6b7819947c"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/prompts/query/question_gen_system_prompt.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/prompts/query/question_gen_system_prompt.py",
+      "bytes": 939,
+      "sha256": "7d5d91c5fcecff32318b6ed0e40a4a66ad3592018ac9407e83366882f0f40702"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/py.typed",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/py.typed",
+      "bytes": 112,
+      "sha256": "9ece2ccb96e3355b1adb91f74ec589801272088728164bcadcebb81a925b394e"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/query/__init__.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/query/__init__.py",
+      "bytes": 115,
+      "sha256": "c0db3973931287e848a8d0d5a5369700928d5f9132a3762c4fcbcc084ca4f7ee"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/query/context_builder/__init__.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/query/context_builder/__init__.py",
+      "bytes": 169,
+      "sha256": "b0ada08d9ba5ada70ea98182e51666874fc686c240a4aa099d2a513730f2994c"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/query/context_builder/builders.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/query/context_builder/builders.py",
+      "bytes": 1915,
+      "sha256": "eabfade93bffa55d4e7975b74f24124eb893747deae779115ec4475ea05c814b"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/query/context_builder/community_context.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/query/context_builder/community_context.py",
+      "bytes": 9385,
+      "sha256": "1a5157f1471ac7f697e017212a600e5eb8f734c0d6e8c1c42be174c01c965719"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/query/context_builder/conversation_history.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/query/context_builder/conversation_history.py",
+      "bytes": 7051,
+      "sha256": "e7760407876bbaac6d8e496c2dd114266e67289ac3f7b369bfd4b344b7915812"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/query/context_builder/dynamic_community_selection.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/query/context_builder/dynamic_community_selection.py",
+      "bytes": 6830,
+      "sha256": "b5f9ab42dd781563dee1687df92e7cb5e47873964798e4456efaaf2264dbd1b4"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/query/context_builder/entity_extraction.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/query/context_builder/entity_extraction.py",
+      "bytes": 4385,
+      "sha256": "9d8d4a22d55165b3a3dc440b28cc02df91ddeee30593275033782820bb05739c"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/query/context_builder/local_context.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/query/context_builder/local_context.py",
+      "bytes": 13290,
+      "sha256": "fd0e36688340aacc0b87386a301e7db42bcc9796a36e6ff9c2afab9989ff6933"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/query/context_builder/rate_prompt.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/query/context_builder/rate_prompt.py",
+      "bytes": 868,
+      "sha256": "8b8c8026b063e1e5b1b47fe4e0f56e82a5bd4a9ff2a02da9184c7cabbd39ae57"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/query/context_builder/rate_relevancy.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/query/context_builder/rate_relevancy.py",
+      "bytes": 3126,
+      "sha256": "c7b0a0888c3f0fb8117dcbd1410409965967e908e7193f984ae39760b53bfc60"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/query/context_builder/source_context.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/query/context_builder/source_context.py",
+      "bytes": 3292,
+      "sha256": "01cfc554b5833996020db85e8b9e2576d1a8b89e7390a95d87b9ab7ace6ed752"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/query/factory.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/query/factory.py",
+      "bytes": 10291,
+      "sha256": "a702434d6a6c8df9867f3b1e143de96ea6cb10ed177137fa0c9d095fb5a9c734"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/query/indexer_adapters.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/query/indexer_adapters.py",
+      "bytes": 7574,
+      "sha256": "d330af291d827941fe904c6d1532913249e9a8aa05702bf8f3fa9eb6cbc28270"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/query/input/__init__.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/query/input/__init__.py",
+      "bytes": 115,
+      "sha256": "3964080ed23949343bc69cf53211a3456d4133a392259e07bbd656a30ea596ab"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/query/input/loaders/__init__.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/query/input/loaders/__init__.py",
+      "bytes": 122,
+      "sha256": "40300d8f651339eb2db87edccb505f4d577a9e1d7ec99df3a94a449fa9e6f1a6"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/query/input/loaders/dfs.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/query/input/loaders/dfs.py",
+      "bytes": 9160,
+      "sha256": "c8669db55a5238091f8b24249ca1eabed1e7d69fc39717248587070058a981fa"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/query/input/loaders/utils.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/query/input/loaders/utils.py",
+      "bytes": 6165,
+      "sha256": "d14ed9b234271a73e9cee43f03aaa65891a0191ec8b97c3aebac4fd3e170016a"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/query/input/retrieval/__init__.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/query/input/retrieval/__init__.py",
+      "bytes": 124,
+      "sha256": "8bf652aea763a4f2f063a3b0c9ad732c7f8500486e6412a6fb2b72e5518b4ff7"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/query/input/retrieval/community_reports.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/query/input/retrieval/community_reports.py",
+      "bytes": 2504,
+      "sha256": "a80f16938914fedd0575bc334885f068602ecaf2759f7f621614b123b1e452c0"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/query/input/retrieval/covariates.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/query/input/retrieval/covariates.py",
+      "bytes": 1747,
+      "sha256": "21aff70b2b9d9cc9e2b2df598ca0ff4be486a800a496d20436fc82c9e8a9613c"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/query/input/retrieval/entities.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/query/input/retrieval/entities.py",
+      "bytes": 3083,
+      "sha256": "d57893bd3ed06fe55312974769cb0741633ee5beaaa2426771285a5df4a65741"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/query/input/retrieval/relationships.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/query/input/retrieval/relationships.py",
+      "bytes": 5125,
+      "sha256": "9c42aad4360f7478a44b70110bb0d0989d55a176a0f4444fb679de871905c2cd"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/query/input/retrieval/text_units.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/query/input/retrieval/text_units.py",
+      "bytes": 1727,
+      "sha256": "1efeb8a7f4c455fe88ad8c93d24d5731df470d9fcc9e7e3fb4b193d83895bd28"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/query/llm/__init__.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/query/llm/__init__.py",
+      "bytes": 113,
+      "sha256": "f63bec817c042e6c0db5cdffed3e28f8677bd6ca6635675db9b462ff94f2640d"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/query/llm/text_utils.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/query/llm/text_utils.py",
+      "bytes": 3150,
+      "sha256": "a28955297bbe539ce06624a364b2a2f96809db09b6be48bba12fbf776b356b7e"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/query/question_gen/__init__.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/query/question_gen/__init__.py",
+      "bytes": 112,
+      "sha256": "109f79bae12fd909403c453551b5c7ceec2b12d8330a4babadc40b0f3fb51931"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/query/question_gen/base.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/query/question_gen/base.py",
+      "bytes": 1839,
+      "sha256": "e56ecb7e5f8367cc3748669401af29cf676e689b6e721c1d974f83b027412ed8"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/query/question_gen/local_gen.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/query/question_gen/local_gen.py",
+      "bytes": 8342,
+      "sha256": "b35da453f00ff6373a5742e364261a38d94a5296757aa35c61475ea8f3459dc8"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/query/structured_search/__init__.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/query/structured_search/__init__.py",
+      "bytes": 111,
+      "sha256": "7b3f859f7314e6621a4b47114d3e027e723005e953441dc334d31115409097d9"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/query/structured_search/base.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/query/structured_search/base.py",
+      "bytes": 2775,
+      "sha256": "fff7d38cae31535dd0f13110219e7c0667f26448de20df15664b43a14b299583"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/query/structured_search/basic_search/__init__.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/query/structured_search/basic_search/__init__.py",
+      "bytes": 109,
+      "sha256": "f6583a5b71bec50214fd65f92893add65ecd3a4c534ae7bee3043d6185dd0261"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/query/structured_search/basic_search/basic_context.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/query/structured_search/basic_search/basic_context.py",
+      "bytes": 3772,
+      "sha256": "2000372cb46d762a2b59eac6025c710177131a877f189abfadbcc9c93eb5ff60"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/query/structured_search/basic_search/search.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/query/structured_search/basic_search/search.py",
+      "bytes": 6777,
+      "sha256": "163e3613a637b78c0eff33c7c09f674349e687e1f7bedc4494278fc196bac91e"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/query/structured_search/drift_search/__init__.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/query/structured_search/drift_search/__init__.py",
+      "bytes": 104,
+      "sha256": "307b6df0968394254e50a9443e1ec1d27dff82cb5652ee9063701d35a01fbc06"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/query/structured_search/drift_search/action.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/query/structured_search/drift_search/action.py",
+      "bytes": 7901,
+      "sha256": "4b0d08d24e4a2f4bcd7e0a784723e9d58a2e67ea18a9cb19d4d706c542fa42dd"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/query/structured_search/drift_search/drift_context.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/query/structured_search/drift_search/drift_context.py",
+      "bytes": 8074,
+      "sha256": "91ea6c30425e8308fbbd70d0ff017408c9df8dcd306139265b943f0b663300f2"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/query/structured_search/drift_search/primer.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/query/structured_search/drift_search/primer.py",
+      "bytes": 8467,
+      "sha256": "4f54500b02ada4d6c843f0fcb72995107b642adc364029d72f147ebf9e108850"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/query/structured_search/drift_search/search.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/query/structured_search/drift_search/search.py",
+      "bytes": 17105,
+      "sha256": "a72c5ab7bd803818ad4728bc683b734ec3a981052904d5a9d068622b2dc5ba7f"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/query/structured_search/drift_search/state.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/query/structured_search/drift_search/state.py",
+      "bytes": 5320,
+      "sha256": "2af60554879cb4eb54df0e1683afc9171867783fc9b7a210ce4ebe819f159175"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/query/structured_search/global_search/__init__.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/query/structured_search/global_search/__init__.py",
+      "bytes": 105,
+      "sha256": "a848560a5ac40709e515cc5ba046718042abaa09430c15804a4fc5545de31879"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/query/structured_search/global_search/community_context.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/query/structured_search/global_search/community_context.py",
+      "bytes": 5896,
+      "sha256": "19b11f45ee96fbd6200f653e0f58e9adeb282b9548091210fe8a8e6498a2818f"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/query/structured_search/global_search/search.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/query/structured_search/global_search/search.py",
+      "bytes": 20309,
+      "sha256": "c201e86aa401452ab4b5eee25f439283b572e7148ab3d823bf555f68c495cd30"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/query/structured_search/local_search/__init__.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/query/structured_search/local_search/__init__.py",
+      "bytes": 109,
+      "sha256": "0c7580665fab38b1205daaba407167f51b1e6176146aa707d58c389a3c3f62ea"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/query/structured_search/local_search/mixed_context.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/query/structured_search/local_search/mixed_context.py",
+      "bytes": 21356,
+      "sha256": "39e2b27f8bb7cc65cfaca09ab953e95b5539a355ef08d6da654dd8bac2616cfe"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/query/structured_search/local_search/search.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/query/structured_search/local_search/search.py",
+      "bytes": 6923,
+      "sha256": "bf83cd5154b93be491a3b6cde0813f8b29b52f75214b1b4f1d64f1a424041b7c"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/tokenizer/__init__.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/tokenizer/__init__.py",
+      "bytes": 104,
+      "sha256": "bd57faad1f6ac191b77c73a6bc42b0a9a1123a661c0afaf44200c94fc13bb766"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/tokenizer/get_tokenizer.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/tokenizer/get_tokenizer.py",
+      "bytes": 1610,
+      "sha256": "1cfe90f3264afaaf9aeffd051b4e5de7d758e59dfcf5b9639d6b579e18f9378e"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/utils/__init__.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/utils/__init__.py",
+      "bytes": 125,
+      "sha256": "31b676e5dd54ba31ef0fe48eb90d1b76db3e1b45fdb1125da5c5183a24d225f3"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/utils/api.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/utils/api.py",
+      "bytes": 2166,
+      "sha256": "2799255efd2928f8782e3a32b9777bbb48ef95c6b782c95cfd9ce6166c6a1fae"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/graphrag/utils/cli.py",
+      "source_path": "third_party/graphrag/packages/graphrag/graphrag/utils/cli.py",
+      "bytes": 1493,
+      "sha256": "13c794da3cc85d96ce6563eaf893679caa299945ae4f76e1cf61ee44fe053271"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/pyproject.toml",
+      "source_path": "third_party/graphrag/packages/graphrag/pyproject.toml",
+      "bytes": 2360,
+      "sha256": "2d3a5846ffe6cc3ca41efc29f27ed65e35925d0ac2d5620e9ea6c0845914760c"
+    },
+    {
+      "path": "third_party/graphrag/packages/graphrag/README.md",
+      "source_path": "third_party/graphrag/packages/graphrag/README.md",
+      "bytes": 4576,
+      "sha256": "700207459232942ba77f007d28ffbfbf66403f94dfab60fe0685354c2280b7fe"
+    },
+    {
+      "path": "third_party/graphrag/pyproject.toml",
+      "source_path": "third_party/graphrag/pyproject.toml",
+      "bytes": 9087,
+      "sha256": "ed2806820a9fbe174a232ef108d5f236de2867c319771c9821e87690c3f8aa22"
+    },
+    {
+      "path": "third_party/graphrag/README.md",
+      "source_path": "third_party/graphrag/README.md",
+      "bytes": 4574,
+      "sha256": "7dae46d9ed7bfb1fd85dc96ffb76663e889ceb7b3d7389b781bf3ffad61e1209"
+    }
+  ]
+}
